@@ -1,0 +1,6 @@
+framework module YHSearch {
+  umbrella header "YHSearch-umbrella.h"
+
+  export *
+  module * { export * }
+}
