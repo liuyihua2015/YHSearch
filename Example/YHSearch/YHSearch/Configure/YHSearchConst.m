@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YHSearchConst.h"
 
 NSString *const YHSearchSearchPlaceholderText = @"YHSearchSearchPlaceholderText";
 NSString *const YHSearchHotSearchText = @"YHSearchHotSearchText";

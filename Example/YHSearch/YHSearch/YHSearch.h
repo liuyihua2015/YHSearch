@@ -11,6 +11,7 @@
 #import <Foundation/Foundation.h>
 
 #import "YHSearchViewController.h"
+#import "YHSearchTagConfigure.h"
 
 #define YHSearch_h
 

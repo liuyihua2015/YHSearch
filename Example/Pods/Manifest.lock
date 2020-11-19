@@ -4,7 +4,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - YHSearch (0.1.0)
+  - Masonry (1.1.0)
+  - YHSearch (0.1.0):
+    - Masonry
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -13,6 +15,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
+    - Masonry
 
 EXTERNAL SOURCES:
   YHSearch:
@@ -20,7 +23,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  YHSearch: b8bada558174374bc2a79b726241890e93c4a299
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  YHSearch: d56245fe0a9041768bcd9c7f756c4d0cfb07b313
 
 PODFILE CHECKSUM: d3f317ad3784d98b497092e2ca08fb15a724dfac
 

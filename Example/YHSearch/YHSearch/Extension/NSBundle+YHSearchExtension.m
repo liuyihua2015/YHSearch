@@ -16,11 +16,11 @@
     static NSBundle *searchBundle = nil;
     if (nil == searchBundle) {
         //Default use `[NSBundle mainBundle]`.
-        searchBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"PYSearch" ofType:@"bundle"]];
+        searchBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"YHSearch" ofType:@"bundle"]];
         /**
-         If you use pod import and configure `use_frameworks` in Podfile, [NSBundle mainBundle] does not load the `PYSearch.fundle` resource file in `PYSearch.framework`.
+         If you use pod import and configure `use_frameworks` in Podfile, [NSBundle mainBundle] does not load the `YHSearch.fundle` resource file in `YHSearch.framework`.
          */
-        if (nil == searchBundle) { // Empty description resource file in `PYSearch.framework`.
+        if (nil == searchBundle) { // Empty description resource file in `YHSearch.framework`.
             searchBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[YHSearchViewController class]] pathForResource:@"YHSearch" ofType:@"bundle"]];
         }
     }

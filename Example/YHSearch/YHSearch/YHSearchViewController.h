@@ -95,7 +95,7 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
 /**
  热门搜索的标签
  */
-@property (nonatomic, copy) NSArray<UILabel *> *hotSearchTags;
+@property (nonatomic, copy) NSArray<UIButton *> *hotSearchTags;
 
 /**
  热门搜索的标签Header
@@ -113,9 +113,9 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
 @property (nonatomic, copy) NSString *hotSearchTitle;
 
 /**
- 搜索历史的标签
+ 搜索历史的标签数组
  */
-@property (nonatomic, copy) NSArray<UILabel *> *searchHistoryTags;
+@property (nonatomic, copy) NSArray<UIButton *> *searchHistoryTags;
 
 /**
  搜索历史的标签 Header
@@ -140,16 +140,7 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
 @property (nonatomic, copy) NSString *searchHistoriesCachePath;
 
 /**
- 是否是 帖子相关的搜索功能历史记录
- */
-@property (nonatomic, assign) BOOL isPostingSearch;
-/**
- 帖子 缓存搜索记录的路径  default is `PYSEARCH_SEARCH_HISTORY_CACHE_PATH_POSTING`.
- */
-@property (nonatomic, copy) NSString * searchPostingHistoriesCachePath;
-
-/**
- 缓存搜索记录的数量，默认为20条.
+ 缓存搜索记录的数量，默认为10条.
  */
 @property (nonatomic, assign) NSUInteger searchHistoriesCount;
 
@@ -159,7 +150,7 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
 @property (nonatomic, assign) BOOL removeSpaceOnSearchString;
 
 /**
- 热门历史是否在上面，默认为YES
+ 热门搜索是否在上面，默认为YES
  */
 @property (nonatomic, assign) BOOL hotSearchPositionIsUp;
 
@@ -170,7 +161,7 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
 @property (nonatomic, weak) UIButton *emptyButton;
 
 /**
- 搜索开始时调用的块.
+ 搜索开始时调用的block.
  */
 @property (nonatomic, copy) PYDidSearchBlock didSearchBlock;
 
@@ -179,6 +170,11 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
  返回搜索结果时是否显示键盘，默认为YES。
  */
 @property (nonatomic, assign) BOOL showKeyboardWhenReturnSearchResult;
+
+/**
+ 搜索标签配置属性
+ */
+@property (nonatomic, strong) YHSearchTagConfigure * searchTagConfigure;
 
 /**
  用热门搜索和搜索栏的占位符创建searchViewContoller实例。
