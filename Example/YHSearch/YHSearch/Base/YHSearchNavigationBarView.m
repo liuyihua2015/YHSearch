@@ -33,7 +33,7 @@
     [self.searchView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.mas_equalTo(-5);
         make.left.mas_equalTo(10);
-        make.right.mas_equalTo(-50);
+        make.right.mas_equalTo(self.cancelButton.mas_left);
         make.height.mas_equalTo(36);
     }];
    
@@ -52,7 +52,9 @@
     
     [self.cancelButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.searchView);
-        make.right.mas_equalTo(-11);
+        make.left.mas_equalTo(self.searchView.mas_right);
+        make.right.mas_equalTo(self);
+        make.width.mas_equalTo(60);
     }];
     
     [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -93,7 +95,7 @@
         _searchTextField.font = [UIFont systemFontOfSize:14];
         _searchTextField.textColor = [UIColor blackColor];
         _searchTextField.returnKeyType = UIReturnKeySearch;
-        NSMutableAttributedString * placeholder = [[NSMutableAttributedString alloc]initWithString:@"请输入书籍名称、作者或出版社"  attributes:@{NSForegroundColorAttributeName:[UIColor yh_colorWithHexString:@"#BABABA"],
+        NSMutableAttributedString * placeholder = [[NSMutableAttributedString alloc]initWithString:@""  attributes:@{NSForegroundColorAttributeName:[UIColor yh_colorWithHexString:@"#BABABA"],
                                                                                                                                    NSFontAttributeName:[UIFont systemFontOfSize:13]}];
         _searchTextField.attributedPlaceholder = placeholder;
         _searchTextField.clearButtonMode = UITextFieldViewModeWhileEditing;

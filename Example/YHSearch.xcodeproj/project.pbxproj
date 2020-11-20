@@ -34,6 +34,7 @@
 		BBC4142F2565103B00124326 /* YHSearchConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC4142E2565103B00124326 /* YHSearchConst.m */; };
 		BBC41438256512D300124326 /* YHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC41437256512D300124326 /* YHBaseViewController.m */; };
 		BBC414402565155A00124326 /* YHSearchNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC4143F2565155A00124326 /* YHSearchNavigationBarView.m */; };
+		BBF701F4256755030082E607 /* YHExampleSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF701F3256755020082E607 /* YHExampleSearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		BBC41437256512D300124326 /* YHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHBaseViewController.m; sourceTree = "<group>"; };
 		BBC4143E2565155A00124326 /* YHSearchNavigationBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHSearchNavigationBarView.h; sourceTree = "<group>"; };
 		BBC4143F2565155A00124326 /* YHSearchNavigationBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHSearchNavigationBarView.m; sourceTree = "<group>"; };
+		BBF701F2256755020082E607 /* YHExampleSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHExampleSearchViewController.h; sourceTree = "<group>"; };
+		BBF701F3256755020082E607 /* YHExampleSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHExampleSearchViewController.m; sourceTree = "<group>"; };
 		BDE848D409A0DBBE6003C8FE /* Pods-YHSearch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHSearch_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YHSearch_Tests/Pods-YHSearch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F923E6F112D347DCACF5806B /* Pods-YHSearch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHSearch_Example.release.xcconfig"; path = "Target Support Files/Pods-YHSearch_Example/Pods-YHSearch_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FA28703DFC273E273A9F8E9F /* YHSearch.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YHSearch.podspec; path = ../YHSearch.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -168,6 +171,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* YHViewController.h */,
 				6003F5A6195388D20070C39A /* YHViewController.m */,
+				BBF701F2256755020082E607 /* YHExampleSearchViewController.h */,
+				BBF701F3256755020082E607 /* YHExampleSearchViewController.m */,
 				BB52BA912566071600F6DBDD /* YHSearchResultViewController.h */,
 				BB52BA922566071600F6DBDD /* YHSearchResultViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -479,6 +484,7 @@
 				BBC4141825650E4C00124326 /* UIView+YHSearchExtension.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				BBC41438256512D300124326 /* YHBaseViewController.m in Sources */,
+				BBF701F4256755030082E607 /* YHExampleSearchViewController.m in Sources */,
 				BBC4142825650F5C00124326 /* NSBundle+YHSearchExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

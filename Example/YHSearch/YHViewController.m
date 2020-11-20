@@ -9,6 +9,7 @@
 #import "YHViewController.h"
 #import "YHSearch.h"
 #import "YHSearchResultViewController.h"
+#import "YHExampleSearchViewController.h"
 
 @interface YHViewController ()
 
@@ -42,7 +43,19 @@
     
     NSLog(@"搜索按钮点击");
     
-    YHSearchViewController *searchViewController = [YHSearchViewController searchViewControllerWithHotSearches:@[@"热门词1",@"热门词2",@"热门词3",@"热门词4",@"热门词5",@"热门词6"] searchTextFieldPlaceholder:@"搜索你的内容" didSearchBlock:^(YHSearchViewController *searchViewController, UITextField *searchTextField, NSString *searchText) {
+//    YHSearchViewController *searchViewController = [YHSearchViewController searchViewControllerWithHotSearches:@[@"热门词1",@"热门词2",@"热门词3",@"热门词4",@"热门词5",@"热门词6"] searchTextFieldPlaceholder:@"搜索你的内容" didSearchBlock:^(YHSearchViewController *searchViewController, UITextField *searchTextField, NSString *searchText) {
+//
+//        NSLog(@"%@",searchText);
+//
+//        YHSearchResultViewController * vc = [[YHSearchResultViewController alloc]init];
+//        vc.title = searchText;
+//        vc.view.backgroundColor = [UIColor whiteColor];
+//        [self.navigationController pushViewController:vc animated:NO];
+//
+//    }];
+    
+    //创建子控制器
+    YHExampleSearchViewController *searchViewController = [YHExampleSearchViewController searchViewControllerWithHotSearches:@[@"热门词1",@"热门词2",@"热门词3",@"热门词4",@"热门词5",@"热门词6热门词6热门词6??"] searchTextFieldPlaceholder:@"搜索你的内容" didSearchBlock:^(YHSearchViewController *searchViewController, UITextField *searchTextField, NSString *searchText) {
         
         NSLog(@"%@",searchText);
         
@@ -53,13 +66,12 @@
         
     }];
     
-    //tag设置属性
-    
+    //tag设置属性修改（可选）
     YHSearchTagConfigure * configure = searchViewController.searchTagConfigure;
     configure.tagTextDisplayLength = 10;
     configure.tagHotImageDisplayLength = 3;
-//    configure.tagHotImage = [UIImage imageNamed:@"hot"];
     
+//    configure.tagHotImage = [UIImage imageNamed:@"hot"];
 //    configure.tagHotImage = [UIImage imageNamed:@""];
 //    configure.tagBorderColor = [UIColor redColor];
 //    configure.tagBorderWidth = 1;

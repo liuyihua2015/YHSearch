@@ -29,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIColor *tagTitleColor;
 /// Tag文本背景颜色，默认 #F9F9F9
 @property (nonatomic, strong) UIColor *tagBackgroundColor;
+///searchTextField Close 图片更换, 默认不做修改
+@property (nonatomic, strong) UIImage * textFieldCloseImage;
 
 
 @end

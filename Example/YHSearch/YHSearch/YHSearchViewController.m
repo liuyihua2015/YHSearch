@@ -479,9 +479,12 @@
 
 - (void)setHotSearchTags:(NSArray<UIButton *> *)hotSearchTags
 {
-    for (UIButton *tagBtn in hotSearchTags) {
-        tagBtn.tag = 1;
+    
+    for (int i = 0 ; i < hotSearchTags.count; i++) {
+        UIButton *tagBtn = hotSearchTags[i];
+        tagBtn.tag = 1000+i;
     }
+
     _hotSearchTags = hotSearchTags;
 }
 
@@ -509,6 +512,11 @@
 -(void)setSearchTagConfigure:(YHSearchTagConfigure *)searchTagConfigure {
     
     _searchTagConfigure = searchTagConfigure;
+    
+    if (searchTagConfigure.textFieldCloseImage) {
+        UIButton * button = [self.searchNavigaitonBarView.searchTextField valueForKey:@"_clearButton"];
+        [button setImage:searchTagConfigure.textFieldCloseImage forState:UIControlStateNormal];
+    }
     
     [self setupHistorySearchNormalTags];
     
@@ -568,23 +576,36 @@
 //MARK: - tag标签点击
 - (void)tagDidCLick:(UIButton *)tagBtn
 {
-    self.searchNavigaitonBarView.searchTextField.text = tagBtn.titleLabel.text;
-    if (1 == tagBtn.tag) {
+        
+    if (tagBtn.tag >= 1000) {//热门搜索
+        
+        NSInteger tag = tagBtn.tag - 1000;
+        NSString * searchText = self.hotSearches[tag];
+        self.searchNavigaitonBarView.searchTextField.text = searchText;
+        
         if ([self.delegate respondsToSelector:@selector(searchViewController:didSelectHotSearchAtIndex:searchText:)]) {
-            [self.delegate searchViewController:self didSelectHotSearchAtIndex:[self.hotSearchTags indexOfObject:tagBtn] searchText:tagBtn.titleLabel.text];
+            [self.delegate searchViewController:self didSelectHotSearchAtIndex:[self.hotSearchTags indexOfObject:tagBtn] searchText:searchText];
             [self saveSearchCacheAndRefreshView];
         } else {
             [self searchNavigaitonBarViewByTextFieldShouldReturn:self.searchNavigaitonBarView.searchTextField];
         }
+        
+        YHSEARCH_LOG(@"Hot Search text = %@", searchText);
+        
     } else {
+        
+        NSString * searchText = self.searchHistories[tagBtn.tag];
+        self.searchNavigaitonBarView.searchTextField.text = searchText;
+        
         if ([self.delegate respondsToSelector:@selector(searchViewController:didSelectSearchHistoryAtIndex:searchText:)]) {
-            [self.delegate searchViewController:self didSelectSearchHistoryAtIndex:[self.searchHistoryTags indexOfObject:tagBtn] searchText:tagBtn.titleLabel.text];
+            [self.delegate searchViewController:self didSelectSearchHistoryAtIndex:[self.searchHistoryTags indexOfObject:tagBtn] searchText:searchText];
             [self saveSearchCacheAndRefreshView];
         } else {
             [self searchNavigaitonBarViewByTextFieldShouldReturn:self.searchNavigaitonBarView.searchTextField];
         }
+        YHSEARCH_LOG(@"Histories Search text = %@", searchText);
     }
-    YHSEARCH_LOG(@"Search %@", tagBtn.titleLabel.text);
+    
 }
 
 - (UIButton *)tagBtnWithTitle:(NSString *)title tag:(int)tag isHotTag:(BOOL)isHotTag
