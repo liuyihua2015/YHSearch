@@ -227,7 +227,7 @@
 
     [self.view addSubview:self.searchNavigaitonBarView];
     [self setupTableViewWithFrame:CGRectZero style:UITableViewStylePlain];
-    self.tableView.frame = CGRectMake(0, CGRectGetMaxY(self.searchNavigaitonBarView.frame), YHScreenW, YHScreenH - 64);
+    self.tableView.frame = CGRectMake(0, CGRectGetMaxY(self.searchNavigaitonBarView.frame), YHScreenW, YHScreenH - YH_NavgationFullHeight);
     
     self.view.backgroundColor = [UIColor whiteColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -271,7 +271,7 @@
 //MARK: - Initializers
 - (YHSearchNavigationBarView *)searchNavigaitonBarView{
     if (!_searchNavigaitonBarView) {
-        _searchNavigaitonBarView = [[YHSearchNavigationBarView alloc]initWithFrame:CGRectMake(0, 0, self.view.yh_width, 64)];
+        _searchNavigaitonBarView = [[YHSearchNavigationBarView alloc]initWithFrame:CGRectMake(0, 0, self.view.yh_width, YH_NavgationFullHeight)];
         _searchNavigaitonBarView.delegate = self;
     }
     return _searchNavigaitonBarView;
