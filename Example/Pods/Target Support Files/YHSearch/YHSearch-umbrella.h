@@ -10,6 +10,15 @@
 #endif
 #endif
 
+#import "YHBaseViewController.h"
+#import "YHSearchNavigationBarView.h"
+#import "YHSearchConst.h"
+#import "YHSearchTagConfigure.h"
+#import "NSBundle+YHSearchExtension.h"
+#import "UIColor+YHSearchExtension.h"
+#import "UIView+YHSearchExtension.h"
+#import "YHSearch.h"
+#import "YHSearchViewController.h"
 
 FOUNDATION_EXPORT double YHSearchVersionNumber;
 FOUNDATION_EXPORT const unsigned char YHSearchVersionString[];

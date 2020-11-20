@@ -26,9 +26,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'YHSearch/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'YHSearch' => ['YHSearch/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'YHSearch' => ['YHSearch/Assets/*']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
