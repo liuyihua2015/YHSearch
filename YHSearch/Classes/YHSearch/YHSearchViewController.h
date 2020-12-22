@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "YHSearchConst.h"
 #import "YHBaseViewController.h"
+#import "YHSearchHotWordsModel.h"
 
 @class YHSearchViewController;
 
@@ -90,7 +91,7 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
 /**
  热门搜索
  */
-@property (nonatomic, copy) NSArray<NSString *> *hotSearches;
+@property (nonatomic, copy) NSArray<YHSearchHotWordsModel *> *hotSearches;
 
 /**
  热门搜索的标签
@@ -183,7 +184,7 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
  @param placeholder     placeholder of search bar
  @return new instance of `YHSearchViewController` class
  */
-+ (instancetype)searchViewControllerWithHotSearches:(NSArray<NSString *> *)hotSearches
++ (instancetype)searchViewControllerWithHotSearches:(NSArray<YHSearchHotWordsModel *> *)hotSearches
                                searchTextFieldPlaceholder:(NSString *)placeholder;
 
 /**
@@ -196,7 +197,7 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
  
  注意:' delegate '的优先级大于' block '，当' searchViewController:didSearchWithSearchTextField:searchText: '被实现时' block '是无效的。
  */
-+ (instancetype)searchViewControllerWithHotSearches:(NSArray<NSString *> *)hotSearches
++ (instancetype)searchViewControllerWithHotSearches:(NSArray<YHSearchHotWordsModel *> *)hotSearches
                                searchTextFieldPlaceholder:(NSString *)placeholder
                                      didSearchBlock:(PYDidSearchBlock)block;
 

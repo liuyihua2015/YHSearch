@@ -10,10 +10,13 @@
 #import "YHSearchConst.h"
 #import "YHSearchNavigationBarView.h"
 
-
-#define PYRectangleTagMaxCol 3
 #define PYTextColor YHSEARCH_COLOR(113, 113, 113)
-#define YHSEARCH_COLORPolRandomColor self.colorPol[arc4random_uniform((uint32_t)self.colorPol.count)]
+
+#define YHMethodParameterError() \
+    @throw [NSException exceptionWithName:NSInternalInconsistencyException \
+                                   reason:[NSString stringWithFormat:@"You must used NSArray<YHSearchHotWordsModel *> In the %@ ", NSStringFromSelector(_cmd)] \
+                                 userInfo:nil]
+
 
 @interface YHSearchViewController () <PPSearchNavigaitonBarViewDelegate>
 
@@ -76,8 +79,7 @@
     if (self = [super init]) {
         
         YHSearchTagConfigure * configure = [[YHSearchTagConfigure alloc]init];
-        configure.tagTextDisplayLength = 0;
-        configure.tagHotImageDisplayLength = 0;
+        configure.historytTagTextDisplayLength = 0;
         configure.tagHotImage = [NSBundle yh_imageNamed:@"hot"];
         configure.tagBorderColor = [UIColor clearColor];
         configure.tagBorderWidth = 0;
@@ -94,12 +96,11 @@
 }
 
 
-- (BOOL)prefersStatusBarHidden
-{
+- (BOOL)prefersStatusBarHidden {
     return NO;
 }
 
--(BOOL)fd_interactivePopDisabled{
+- (BOOL)fd_interactivePopDisabled {
     
     return YES;
     
@@ -108,16 +109,9 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-            
     
-    // Adjust the view according to the `navigationBar.translucent`
-    if (NO == self.navigationController.navigationBar.translucent) {
-        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, self.view.yh_y, 0);
-        if (!self.navigationController.navigationBar.barTintColor) {
-            self.navigationController.navigationBar.barTintColor = YHSEARCH_COLOR(249, 249, 249);
-        }
-    }
-    
+    self.navigationController.navigationBarHidden = YES;
+
     if (YES == self.showKeyboardWhenReturnSearchResult) {
         [self.searchNavigaitonBarView searchBecomeFirstResponder];
     }
@@ -147,7 +141,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-+ (instancetype)searchViewControllerWithHotSearches:(NSArray<NSString *> *)hotSearches searchTextFieldPlaceholder:(NSString *)placeholder
++ (instancetype)searchViewControllerWithHotSearches:(NSArray<YHSearchHotWordsModel *> *)hotSearches searchTextFieldPlaceholder:(NSString *)placeholder
 {
     YHSearchViewController *searchVC = [[self alloc] init];
     searchVC.hotSearches = hotSearches;
@@ -156,8 +150,13 @@
     return searchVC;
 }
 
-+ (instancetype)searchViewControllerWithHotSearches:(NSArray<NSString *> *)hotSearches searchTextFieldPlaceholder:(NSString *)placeholder didSearchBlock:(PYDidSearchBlock)block
++ (instancetype)searchViewControllerWithHotSearches:(NSArray<YHSearchHotWordsModel *> *)hotSearches searchTextFieldPlaceholder:(NSString *)placeholder didSearchBlock:(PYDidSearchBlock)block
 {
+    for (YHSearchHotWordsModel * model in hotSearches) {
+        if (![model isKindOfClass:[YHSearchHotWordsModel class]]) {
+            YHMethodParameterError();
+        }
+    }
     YHSearchViewController *searchVC = [self searchViewControllerWithHotSearches:hotSearches searchTextFieldPlaceholder:placeholder];
     searchVC.didSearchBlock = [block copy];
     return searchVC;
@@ -247,7 +246,7 @@
     headerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     
     UIView *hotSearchView = [[UIView alloc] init];
-    hotSearchView.yh_x = YHSEARCH_MARGIN * 1.5;
+    hotSearchView.yh_x = YHSEARCH_MARGIN;
     hotSearchView.yh_width = headerView.yh_width - hotSearchView.yh_x * 2;
     hotSearchView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     UILabel *titleLabel = [self setupTitleLabel:[NSBundle yh_localizedStringForKey:YHSearchHotSearchText]];
@@ -285,7 +284,8 @@
         emptyButton.titleLabel.font = self.searchHistoryHeader.font;
         [emptyButton setTitleColor:PYTextColor forState:UIControlStateNormal];
 //        [emptyButton setTitle:[NSBundle yh_localizedStringForKey:YHSearchEmptyButtonText] forState:UIControlStateNormal];
-        [emptyButton setImage:[NSBundle yh_imageNamed:@"empty"] forState:UIControlStateNormal];
+        [emptyButton setImage:self.searchTagConfigure.searchHistoryDeleteImage forState:UIControlStateNormal];
+
         [emptyButton addTarget:self action:@selector(emptySearchHistoryDidClick) forControlEvents:UIControlEventTouchUpInside];
         [emptyButton sizeToFit];
         emptyButton.yh_width += YHSEARCH_MARGIN;
@@ -372,12 +372,19 @@
     self.searchHistoryTags = [self addAndLayoutTagsWithTagsContentView:self.searchHistoryTagsContentView tagTexts:[self.searchHistories copy] isHotTag:NO];
 }
 
-- (NSArray *)addAndLayoutTagsWithTagsContentView:(UIView *)contentView tagTexts:(NSArray<NSString *> *)tagTexts isHotTag:(BOOL)isHotTag;
+- (NSArray *)addAndLayoutTagsWithTagsContentView:(UIView *)contentView tagTexts:(NSArray<id> *)tagTexts isHotTag:(BOOL)isHotTag
 {
     [contentView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     NSMutableArray *tagsM = [NSMutableArray array];
     for (int i = 0; i < tagTexts.count; i++) {
-        UIButton * btn = [self tagBtnWithTitle:tagTexts[i] tag:i isHotTag:isHotTag];
+        UIButton * btn = nil;
+        if (isHotTag) {
+            YHSearchHotWordsModel * model = tagTexts[i];
+            btn = [self tagBtnWithTitle:model.title tag:i isHotTag:isHotTag isShowHotImage:model.isShowHot];
+        }else{
+            btn = [self tagBtnWithTitle:tagTexts[i] tag:i isHotTag:isHotTag isShowHotImage:NO];
+        }
+       
         [btn addTarget:self action:@selector(tagDidCLick:) forControlEvents:UIControlEventTouchUpInside];
         [contentView addSubview:btn];
         [tagsM addObject:btn];
@@ -387,35 +394,70 @@
     CGFloat currentY = 0;
     CGFloat countRow = 0;
     CGFloat countCol = 0;
+    //最后一个view，用于计算整个区域高度
+    UIView * lastView = nil;
     
-    for (int i = 0; i < contentView.subviews.count; i++) {
-        UILabel *subView = contentView.subviews[i];
-        // When the number of search words is too large, the width is width of the contentView
-        if (subView.yh_width > contentView.yh_width) subView.yh_width = contentView.yh_width;
-        if (currentX + subView.yh_width + YHSEARCH_MARGIN * countRow > contentView.yh_width) {
-            subView.yh_x = 0;
-            subView.yh_y = (currentY += subView.yh_height) + YHSEARCH_MARGIN * ++countCol;
-            currentX = subView.yh_width;
-            countRow = 1;
-        } else {
-            subView.yh_x = (currentX += subView.yh_width) - subView.yh_width + YHSEARCH_MARGIN * countRow;
-            subView.yh_y = currentY + YHSEARCH_MARGIN * countCol;
-            countRow ++;
-        }
+    //显示行数控制
+    int maxCount = 0;
+    if (isHotTag) {
+        maxCount = self.searchTagConfigure.searchHotMaxRows-1;
+    }else{
+        maxCount = self.searchTagConfigure.searchHistoryMaxRows-1;
     }
     
-    contentView.yh_height = CGRectGetMaxY(contentView.subviews.lastObject.frame);
+    for (int i = 0; i < contentView.subviews.count; i++) {
+        UIButton *subView = contentView.subviews[i];
+        
+        //单独一行tag
+        if (subView.yh_width > contentView.yh_width) {
+            subView.yh_width = contentView.yh_width;
+        }
+        //一行的第一个tag
+        if (currentX + subView.yh_width + YHSEARCH_MARGIN * countRow > contentView.yh_width) {
+            subView.yh_x = 0;
+        
+            countCol++;
+            if ((maxCount >= 0) && (countCol > maxCount)) {
+                subView.yh_y = 0;
+                subView.yh_size = CGSizeZero;
+            }else{
+                subView.yh_y = (currentY += subView.yh_height) + YHSEARCH_MARGIN * countCol;
+                lastView = subView;
+            }
+            
+            currentX = subView.yh_width;
+            countRow = 1;
+            
+        } else {//其余的tag
+            if ((maxCount >= 0) && (countCol > maxCount)) {
+                subView.yh_x = 0;
+                subView.yh_y = 0;
+                subView.yh_size = CGSizeZero;
+            }else{
+                subView.yh_x = (currentX += subView.yh_width) - subView.yh_width + YHSEARCH_MARGIN * countRow;
+                subView.yh_y = currentY + YHSEARCH_MARGIN * countCol;
+                lastView = subView;
+            }
+            
+            countRow ++;
+           
+        }
+        
+    }
+    
+        
+    contentView.yh_height = CGRectGetMaxY(lastView.frame);
     if (self.hotSearchTagsContentView == contentView) { // popular search tag
         self.hotSearchView.yh_height = CGRectGetMaxY(contentView.frame) + YHSEARCH_MARGIN * 2;
     } else if (self.searchHistoryTagsContentView == contentView) { // search history tag
         self.searchHistoryView.yh_height = CGRectGetMaxY(contentView.frame) + YHSEARCH_MARGIN * 2;
+        
     }
     
     [self layoutForDemand];
     self.tableView.tableHeaderView.yh_height = self.headerView.yh_height = MAX(CGRectGetMaxY(self.hotSearchView.frame), CGRectGetMaxY(self.searchHistoryView.frame));
     self.tableView.tableHeaderView.hidden = NO;
     
-    // Note：When the operating system for the iOS 9.x series tableHeaderView height settings are invalid, you need to reset the tableHeaderView
     [self.tableView setTableHeaderView:self.tableView.tableHeaderView];
     return [tagsM copy];
 }
@@ -424,13 +466,13 @@
     
     if (self.hotSearchPositionIsUp) {
         
-        self.hotSearchView.yh_y = YHSEARCH_MARGIN * 3;
-        self.searchHistoryView.yh_y = self.hotSearches.count > 0 && self.showHotSearch ? CGRectGetMaxY(self.hotSearchView.frame) + YHSEARCH_MARGIN * 1.5 : YHSEARCH_MARGIN * 3;
+        self.hotSearchView.yh_y = YHSEARCH_MARGIN * 2;
+        self.searchHistoryView.yh_y = self.hotSearches.count > 0 && self.showHotSearch ? CGRectGetMaxY(self.hotSearchView.frame) : YHSEARCH_MARGIN * 2;
        
     }else{
         
-        self.searchHistoryView.yh_y = YHSEARCH_MARGIN * 3;
-        self.hotSearchView.yh_y = self.searchHistories.count > 0 && self.showSearchHistory ? CGRectGetMaxY(self.searchHistoryView.frame) + YHSEARCH_MARGIN * 1.5 : YHSEARCH_MARGIN * 3;
+        self.searchHistoryView.yh_y = YHSEARCH_MARGIN * 2;
+        self.hotSearchView.yh_y = self.searchHistories.count > 0 && self.showSearchHistory ? CGRectGetMaxY(self.searchHistoryView.frame) : YHSEARCH_MARGIN * 2;
     }
     
 }
@@ -491,6 +533,13 @@
 
 - (void)setHotSearches:(NSArray *)hotSearches
 {
+    
+    for (YHSearchHotWordsModel * model in hotSearches) {
+        if (![model isKindOfClass:[YHSearchHotWordsModel class]]) {
+            YHMethodParameterError();
+        }
+    }
+    
     _hotSearches = hotSearches;
     if (0 == hotSearches.count || !self.showHotSearch) {
         self.hotSearchHeader.hidden = YES;
@@ -516,6 +565,9 @@
     if (searchTagConfigure.textFieldCloseImage) {
         UIButton * button = [self.searchNavigaitonBarView.searchTextField valueForKey:@"_clearButton"];
         [button setImage:searchTagConfigure.textFieldCloseImage forState:UIControlStateNormal];
+    }
+    if (searchTagConfigure.searchIconImage) {
+        self.searchNavigaitonBarView.searchIconImageView.image = searchTagConfigure.searchIconImage;
     }
     
     [self setupHistorySearchNormalTags];
@@ -580,17 +632,17 @@
     if (tagBtn.tag >= 1000) {//热门搜索
         
         NSInteger tag = tagBtn.tag - 1000;
-        NSString * searchText = self.hotSearches[tag];
-        self.searchNavigaitonBarView.searchTextField.text = searchText;
+        YHSearchHotWordsModel * model = self.hotSearches[tag];
+        self.searchNavigaitonBarView.searchTextField.text = model.title;
         
         if ([self.delegate respondsToSelector:@selector(searchViewController:didSelectHotSearchAtIndex:searchText:)]) {
-            [self.delegate searchViewController:self didSelectHotSearchAtIndex:[self.hotSearchTags indexOfObject:tagBtn] searchText:searchText];
+            [self.delegate searchViewController:self didSelectHotSearchAtIndex:[self.hotSearchTags indexOfObject:tagBtn] searchText:model.title];
             [self saveSearchCacheAndRefreshView];
         } else {
             [self searchNavigaitonBarViewByTextFieldShouldReturn:self.searchNavigaitonBarView.searchTextField];
         }
         
-        YHSEARCH_LOG(@"Hot Search text = %@", searchText);
+        YHSEARCH_LOG(@"Hot Search text = %@", model.title);
         
     } else {
         
@@ -608,11 +660,16 @@
     
 }
 
-- (UIButton *)tagBtnWithTitle:(NSString *)title tag:(int)tag isHotTag:(BOOL)isHotTag
+/// 常见搜索btn
+/// @param title 标题
+/// @param tag tag值
+/// @param isHotTag 区分历史搜索 和 热门搜索
+/// @param isShowHotImage 热门搜索中的是否显示小的图标
+- (UIButton *)tagBtnWithTitle:(NSString *)title tag:(int)tag isHotTag:(BOOL)isHotTag isShowHotImage:(BOOL)isShowHotImage
 {
     
-    if (self.searchTagConfigure.tagTextDisplayLength && title.length > self.searchTagConfigure.tagTextDisplayLength) {
-        title = [title substringWithRange:NSMakeRange(0, self.searchTagConfigure.tagTextDisplayLength)];
+    if (self.searchTagConfigure.historytTagTextDisplayLength && title.length > self.searchTagConfigure.historytTagTextDisplayLength && !isHotTag) {
+        title = [title substringWithRange:NSMakeRange(0, self.searchTagConfigure.historytTagTextDisplayLength)];
         title = [NSString stringWithFormat:@"%@...",title];
     }
     
@@ -631,16 +688,17 @@
     [btn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
     [btn sizeToFit];
     
-    if (isHotTag && tag < self.searchTagConfigure.tagHotImageDisplayLength) {
+    if (isHotTag && isShowHotImage) {
     
-        btn.yh_width += 40;
+        btn.yh_width += 52;
         [btn setImage:self.searchTagConfigure.tagHotImage forState:UIControlStateNormal];
-        [btn setImageEdgeInsets:UIEdgeInsetsMake(0, -3, 0, 0)];
+        [btn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 3)];
+        [btn setTitleEdgeInsets:UIEdgeInsetsMake(0, 3, 0, 0)];
     
     }else{
         btn.yh_width += 30;
     }
-    btn.yh_height += 8;
+    btn.yh_height = 30;
     
     return btn;
 }

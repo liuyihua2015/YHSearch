@@ -14,7 +14,7 @@
 #import "NSBundle+YHSearchExtension.h"
 #import "YHSearchTagConfigure.h"
 
-#define YHSEARCH_MARGIN 10
+#define YHSEARCH_MARGIN 15
 #define YHSEARCH_BACKGROUND_COLOR YHSEARCH_COLOR(255, 255, 255)
 
 #ifdef DEBUG

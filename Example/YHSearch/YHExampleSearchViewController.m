@@ -17,8 +17,51 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //模拟请求数据
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+
+        //可以在这里赋值
+        NSMutableArray * arrM = [NSMutableArray array];
+
+        for (int i = 0; i<10; i++) {
+
+            YHSearchHotWordsModel * model = [[YHSearchHotWordsModel alloc]init];
+            model.title = [NSString stringWithFormat:@"热么词%d",i];
+            if (i < 5) {
+                model.isShowHot = YES;
+            }
+            [arrM addObject:model];
+        }
+
+        self.hotSearches = arrM;
+
+
+    });
+   
     
 
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+    //可以在这里赋值
+//    NSMutableArray * arrM = [NSMutableArray array];
+//
+//    for (int i = 0; i<10; i++) {
+//
+//        YHSearchHotWordsModel * model = [[YHSearchHotWordsModel alloc]init];
+//        model.title = [NSString stringWithFormat:@"热么词%d",i];
+//        if (i < 5) {
+//            model.isShowHot = YES;
+//        }
+//        [arrM addObject:model];
+//    }
+//
+//    self.hotSearches = arrM;
+    
+    
 }
 
 

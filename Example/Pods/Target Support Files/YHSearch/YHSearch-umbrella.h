@@ -17,6 +17,7 @@
 #import "NSBundle+YHSearchExtension.h"
 #import "UIColor+YHSearchExtension.h"
 #import "UIView+YHSearchExtension.h"
+#import "YHSearchHotWordsModel.h"
 #import "YHSearch.h"
 #import "YHSearchViewController.h"
 
