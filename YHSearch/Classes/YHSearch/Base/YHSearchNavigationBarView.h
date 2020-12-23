@@ -24,11 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param textField textField
 -(BOOL)searchNavigaitonBarViewByTextFieldShouldBeginEditing:(UITextField *)textField;
 
-/// TextField监听每个输入的字符
+/// TextField监听键盘的输入
 /// @param textField textField
-/// @param range range
-/// @param string string
--(BOOL)searchNavigaitonBarViewByTextField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;
+-(void)searchNavigaitonBarViewByTextFieldDidChange:(UITextField *)textField;
 
 /// 开始搜索
 /// @param textField textField

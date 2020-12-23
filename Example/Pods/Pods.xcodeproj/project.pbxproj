@@ -72,6 +72,8 @@
 		B6D0AB04549FFB65C239CC57B816C675 /* YHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F90537C71A6B0A5CEC45F949FC1D72B1 /* YHBaseViewController.m */; };
 		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 43FD0500F155110FC81738ABCFD8722E /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B7D645EC004610E8A581E532D28771EC /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E502E95D75F8DF19C71E7419515430D /* MASViewConstraint.m */; };
+		BBC140F1259331D300606406 /* YHSearchSuggestionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BBC140E72593316B00606406 /* YHSearchSuggestionViewController.h */; };
+		BBC140FE259331D700606406 /* YHSearchSuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC140E82593316B00606406 /* YHSearchSuggestionViewController.m */; };
 		BD4953074A12E769ED4E6C94F5E73694 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289CFCDFEED23B9E649A5FD89EBB2429 /* UIKit.framework */; };
 		C0861ADB4C5FA30F4F9E051F7638A264 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CB974288A2892A90F9702F03E0697C /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		C29063078660E1E12D049F8DB15B4AC2 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571D18C2E4315CA0EE50281AEB95D9C8 /* Masonry.framework */; };
@@ -150,9 +152,9 @@
 		04DBA5D9D467E921B4B19C0DDD06E742 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
 		05ED7991BE91B391C4F38B25354DEEB6 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		0B0A71045D2C733C3BD6340095E5E033 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		0D72A916789B79AB69762C3622931BE3 /* YHSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YHSearch.framework; path = YHSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D72A916789B79AB69762C3622931BE3 /* YHSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YHSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D85C3E6E50008C91B87CB4DB841D90A /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
-		0EC6ADF2AD560D6E72E86030F1C2EF79 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = YHSearch/Assets/en.lproj; sourceTree = "<group>"; };
+		0EC6ADF2AD560D6E72E86030F1C2EF79 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = YHSearch/Assets/en.lproj; sourceTree = "<group>"; };
 		17AAAA6DA488D5DF77D99C020E582627 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		18056459E0FCB26B89B6DB59A4B7F083 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		184DD14C00CA1A9D3DC375878AAC19A1 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
@@ -160,7 +162,7 @@
 		1CF5571DDCAFFDF4C6DA7EB142CCD073 /* YHSearchHotWordsModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YHSearchHotWordsModel.m; sourceTree = "<group>"; };
 		1D0FB1357DE7D247BE34CCB29EDCCFAC /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		1F2A6BCDB8B38970BAAE92CDDEBB3B20 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CFB9B3D4F21626ACCEEDD451DCE930 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		22573F36D6540281EBD2050275303943 /* YHSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YHSearch.release.xcconfig; sourceTree = "<group>"; };
 		2547F69451A0A27A16D11D9705986E91 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
@@ -170,13 +172,13 @@
 		289CFCDFEED23B9E649A5FD89EBB2429 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		2CEEB1F6C31B89937C80AD46D2ECA574 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		2D96A8ED8F2A5A91BF708CE74D78596A /* UIView+YHSearchExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+YHSearchExtension.h"; sourceTree = "<group>"; };
-		306ABF75753D9EBBD1A77202E6E3F740 /* Pods_YHSearch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YHSearch_Example.framework; path = "Pods-YHSearch_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		306ABF75753D9EBBD1A77202E6E3F740 /* Pods_YHSearch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHSearch_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		351B469F82A69464763DA9A8A556D5E4 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		351F58B4D9722C92C9E881C25DBE9BEC /* YHSearch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YHSearch-umbrella.h"; sourceTree = "<group>"; };
 		3538C14800BA6D283B6500C766E4F0D3 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		35A5E3DFA630BE605E987F6A99FA446F /* Pods-YHSearch_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YHSearch_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		41CB974288A2892A90F9702F03E0697C /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		41D4D0B1EFAF3CFA7C471C010F63163F /* Pods_YHSearch_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YHSearch_Tests.framework; path = "Pods-YHSearch_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D4D0B1EFAF3CFA7C471C010F63163F /* Pods_YHSearch_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHSearch_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FBF6FEFEE3DCA6505A8BA93906EFBE /* YHSearchConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YHSearchConst.h; sourceTree = "<group>"; };
 		43FD0500F155110FC81738ABCFD8722E /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		45475C48B7AD1FB29962AEEC2744D702 /* YHSearch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YHSearch.modulemap; sourceTree = "<group>"; };
@@ -188,7 +190,7 @@
 		56F8E501CE8160049FD22610CD1E4BCE /* Pods-YHSearch_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YHSearch_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		571D18C2E4315CA0EE50281AEB95D9C8 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5887C4BB0C503304FFB0A96B52E1D5FC /* Pods-YHSearch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YHSearch_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D487755E7D0F85493EF03FEEB57A4FA /* search@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "search@2x.png"; path = "YHSearch/Assets/search@2x.png"; sourceTree = "<group>"; };
 		602E46B1DC438E157FEFDB89FFC1FEE0 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		619B00416A212E714DCB514C71A854E1 /* YHSearchViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YHSearchViewController.m; path = YHSearch/Classes/YHSearch/YHSearchViewController.m; sourceTree = "<group>"; };
@@ -200,18 +202,18 @@
 		67C130B497B965E2C685D19A93AB97B2 /* Pods-YHSearch_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YHSearch_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6B0DA6CE615E4F352A6CFCBD05A46D5E /* NSBundle+YHSearchExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YHSearchExtension.m"; sourceTree = "<group>"; };
 		6FAE4AAFEAB8DEC40919030C14DF5900 /* hot@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "hot@3x.png"; path = "YHSearch/Assets/hot@3x.png"; sourceTree = "<group>"; };
-		732A7BC7018F957E3B141434DB4A6F35 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		732A7BC7018F957E3B141434DB4A6F35 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		73DA2B3A3C8E6F3A7D976D1C4C4BCEC9 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		7419775CB4A240BD0371098D98303F9E /* YHSearch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YHSearch.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7419775CB4A240BD0371098D98303F9E /* YHSearch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = YHSearch.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		75B839A35A2BFBEC3479FF1552F569BC /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		7731683F4BFFF04ACBB3E9BA86F1B2BA /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		7DFACA8B3DBD4C32C3372337456CFB2F /* UIColor+YHSearchExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+YHSearchExtension.h"; sourceTree = "<group>"; };
 		7E502E95D75F8DF19C71E7419515430D /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
-		7EE803E9DAECDD9A901D06180470CF53 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7EE803E9DAECDD9A901D06180470CF53 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		823AE4B4979D09F91ADB18679CF355CD /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		835D045AB14545352319F1AB0272BE36 /* empty@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "empty@3x.png"; path = "YHSearch/Assets/empty@3x.png"; sourceTree = "<group>"; };
 		85F7E92AFB26C1573053EAF3369AC74F /* Pods-YHSearch_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YHSearch_Example-frameworks.sh"; sourceTree = "<group>"; };
-		875E144FB09FA6EE16387A3E1609FBEB /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "YHSearch/Assets/zh-Hans.lproj"; sourceTree = "<group>"; };
+		875E144FB09FA6EE16387A3E1609FBEB /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "YHSearch/Assets/zh-Hans.lproj"; sourceTree = "<group>"; };
 		8940D361FD89F610F4C862B772A33E51 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		8BF1BA429CD81D56C5BBBB368D0A044E /* Pods-YHSearch_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YHSearch_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8E38282865DF2BEEB33D0D0B44E384A7 /* YHSearchConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YHSearchConst.m; sourceTree = "<group>"; };
@@ -222,7 +224,7 @@
 		9A0263D5B40F7DF3C52FB661FE64926A /* YHBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YHBaseViewController.h; sourceTree = "<group>"; };
 		9B2EAA8A754FC1E0CC3EBAB75BDC8251 /* YHSearchTagConfigure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YHSearchTagConfigure.m; sourceTree = "<group>"; };
 		9D59B3C0F32A810274992E4FE92202D5 /* Pods-YHSearch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YHSearch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A394C2C6ABAE5BF5090CF2AD98C696AF /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		A4A12C368749FD2EEF1BB8849594446F /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		A5ADEF2C33BF1C36E1F6020EA61D65B7 /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
@@ -235,6 +237,8 @@
 		B4EF667670B11768F7119A542E52A5FF /* Pods-YHSearch_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YHSearch_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B5751998ED4D98BFB76B639407774A4A /* Pods-YHSearch_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YHSearch_Tests.modulemap"; sourceTree = "<group>"; };
 		B5B1E2F803DFFCED6F569C9B29D0F433 /* Pods-YHSearch_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YHSearch_Tests-Info.plist"; sourceTree = "<group>"; };
+		BBC140E72593316B00606406 /* YHSearchSuggestionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YHSearchSuggestionViewController.h; path = YHSearch/Classes/YHSearch/YHSearchSuggestionViewController.h; sourceTree = "<group>"; };
+		BBC140E82593316B00606406 /* YHSearchSuggestionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YHSearchSuggestionViewController.m; path = YHSearch/Classes/YHSearch/YHSearchSuggestionViewController.m; sourceTree = "<group>"; };
 		BF110DE70107316228863B82A51A09D3 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		C2CCA1EEEF564C9B552BDE95B6973784 /* search@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "search@3x.png"; path = "YHSearch/Assets/search@3x.png"; sourceTree = "<group>"; };
 		C43B4427803F45E5EE12A79C135ABCEE /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
@@ -261,7 +265,7 @@
 		F0E3E54349F0051FE4FECA273F387927 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F56D9FAFFF2818921ADDC5FCE1FB7C92 /* Pods-YHSearch_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YHSearch_Example-umbrella.h"; sourceTree = "<group>"; };
 		F793D8588CD60BFFC82AF37C9BC308D0 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		F7FBD06C7654DAF6932980BD8F3D2368 /* YHSearch.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = YHSearch.bundle; path = "YHSearch-YHSearch.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7FBD06C7654DAF6932980BD8F3D2368 /* YHSearch.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHSearch.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90537C71A6B0A5CEC45F949FC1D72B1 /* YHBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YHBaseViewController.m; sourceTree = "<group>"; };
 		FB615B3EF3D4ADCD81DF519D67793926 /* YHSearchViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YHSearchViewController.h; path = YHSearch/Classes/YHSearch/YHSearchViewController.h; sourceTree = "<group>"; };
 		FCE1DDE1A00CE0531A4DF74A6C2EB5F8 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
@@ -471,7 +475,6 @@
 				7CCF7D1AA6AE105E48E6A9CA8861E692 /* Support Files */,
 				717370984CC95901120CD02EACC41D72 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -505,7 +508,6 @@
 				1D0FB1357DE7D247BE34CCB29EDCCFAC /* ViewController+MASAdditions.m */,
 				2F1DC79F1ECA9A14267BB11D984EE1B1 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -598,6 +600,8 @@
 				C6E29DB59344ECAFC7B1A35AF3539767 /* YHSearch.h */,
 				FB615B3EF3D4ADCD81DF519D67793926 /* YHSearchViewController.h */,
 				619B00416A212E714DCB514C71A854E1 /* YHSearchViewController.m */,
+				BBC140E72593316B00606406 /* YHSearchSuggestionViewController.h */,
+				BBC140E82593316B00606406 /* YHSearchSuggestionViewController.m */,
 				875E144FB09FA6EE16387A3E1609FBEB /* zh-Hans.lproj */,
 				DA7D2515788BCEF6DF910CBFF717EA80 /* Base */,
 				1B72EC6AB9ADA169165B6030E1615AEA /* Configure */,
@@ -678,6 +682,7 @@
 			files = (
 				A0347067AF1C246A7C1EF8F404A20BDC /* NSBundle+YHSearchExtension.h in Headers */,
 				A81F669587771B3EC047EF11647F5C2A /* UIColor+YHSearchExtension.h in Headers */,
+				BBC140F1259331D300606406 /* YHSearchSuggestionViewController.h in Headers */,
 				84C54E21C450ADDD5613E2ED4D286031 /* UIView+YHSearchExtension.h in Headers */,
 				39A85CB8626484919FA784A041214139 /* YHBaseViewController.h in Headers */,
 				91569118113FF0E4D2D79AE26835B3FB /* YHSearch-umbrella.h in Headers */,
@@ -941,6 +946,7 @@
 				2C62546C9D94C363438B38CE0D179864 /* YHSearchNavigationBarView.m in Sources */,
 				025B4B21DC84CEB4C1A338809C36ECB4 /* YHSearchTagConfigure.m in Sources */,
 				469A3CBA1DF8CC4815464A5A87E3C325 /* YHSearchViewController.m in Sources */,
+				BBC140FE259331D700606406 /* YHSearchSuggestionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1238,8 +1244,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

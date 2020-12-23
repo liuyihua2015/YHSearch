@@ -61,7 +61,7 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
                   searchText:(NSString *)searchText;
 
 /**
- 当搜索文本发生变化时调用了该方法，您可以通过此方法重新加载建议视图数据。
+ 当搜索文本发生变化时调用了该方法，您可以通过此方法重新加载（联系词建议）视图数据。
 
  @param searchViewController    search view controller
  @param searchTextField               searchTextField
@@ -69,6 +69,16 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
  */
 - (void)searchViewController:(YHSearchViewController *)searchViewController
          searchTextDidChange:(UITextField *)searchTextField
+                  searchText:(NSString *)searchText;
+
+/**
+ 联系词建议视图数据cell点击
+
+ @param searchViewController    search view controller
+ @param indexPath               indexPath
+ @param searchText              text for search
+ */
+- (void)searchViewController:(YHSearchViewController *)searchViewController didSelectSearchSuggestionAtIndexPath:(NSIndexPath *)indexPath
                   searchText:(NSString *)searchText;
 
 /**
@@ -86,6 +96,20 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
  The delegate
  */
 @property (nonatomic, weak) id<YHSearchViewControllerDelegate> delegate;
+
+
+
+/**
+ The element of search suggestions
+ 
+ Note: it is't effective when `searchSuggestionHidden` is NO or cell of suggestion view is custom.
+ */
+@property (nonatomic, copy) NSArray<NSString *> *searchSuggestions;
+
+/**
+ Whether hidden search suggstion view, default is NO.
+ */
+@property (nonatomic, assign) BOOL searchSuggestionHidden;
 
 
 /**
@@ -136,7 +160,7 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
 @property (nonatomic, assign) BOOL showSearchHistory;
 
 /**
- 一般默认 缓存搜索记录的路径, default is `PYSEARCH_SEARCH_HISTORY_CACHE_PATH`.
+ 一般默认 缓存搜索记录的路径, default is `YHSEARCH_SEARCH_HISTORY_CACHE_PATH`.
  */
 @property (nonatomic, copy) NSString *searchHistoriesCachePath;
 

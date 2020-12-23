@@ -9,6 +9,7 @@
 #import "YHSearchViewController.h"
 #import "YHSearchConst.h"
 #import "YHSearchNavigationBarView.h"
+#import "YHSearchSuggestionViewController.h"
 
 #define PYTextColor YHSEARCH_COLOR(113, 113, 113)
 
@@ -18,7 +19,7 @@
                                  userInfo:nil]
 
 
-@interface YHSearchViewController () <PPSearchNavigaitonBarViewDelegate>
+@interface YHSearchViewController () <PPSearchNavigaitonBarViewDelegate,YHSearchSuggestionViewDataSource>
 
 /**
  搜索导航栏 View
@@ -69,6 +70,16 @@
  搜索框 Placeholder
  */
 @property (copy   , nonatomic) NSString * kSearchTextFieldPlaceholder;
+
+/**
+ 搜索建议视图控制器
+ */
+@property (nonatomic, weak) YHSearchSuggestionViewController *searchSuggestionVC;
+
+/**
+ 搜索建议视图 tableView
+ */
+@property (nonatomic, weak, readonly) UITableView *searchSuggestionView;
 
 @end
 
@@ -164,63 +175,6 @@
     return searchVC;
 }
 
-//MARK: - PPSearchNavigaitonBarViewDelegate
-
--(BOOL)searchNavigaitonBarViewByTextField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    
-        
-    NSLog(@"%@",textField.text);
-    
-    if (textField.text.length == 0) {
-        self.searchNavigaitonBarView.searchTextField.placeholder = self.kSearchTextFieldPlaceholder;
-    }
-
-  
-    if ([self.delegate respondsToSelector:@selector(searchViewController:searchTextDidChange:searchText:)]) {
-        [self.delegate searchViewController:self searchTextDidChange:textField searchText:textField.text];
-    }
-    
-    return YES;
- 
-    
-}
-
--(BOOL)searchNavigaitonBarViewByTextFieldShouldReturn:(UITextField *)textField{
-    
-    //delegate 回调
-    if ([self.delegate respondsToSelector:@selector(searchViewController:didSearchWithSearchTextField:searchText:)]) {
-        [self.delegate searchViewController:self didSearchWithSearchTextField:textField searchText:textField.text];
-        [self saveSearchCacheAndRefreshView];
-        return YES;
-    }
-    
-    //block 回调
-    if (![textField.text isEqualToString:@""]){
-        self.searchNavigaitonBarView.searchTextField.placeholder = @"";
-        if (self.didSearchBlock) self.didSearchBlock(self, textField, textField.text);
-        [self saveSearchCacheAndRefreshView];
-        return YES;
-    }
-
-    return NO;
- 
-}
-
-- (BOOL)searchNavigaitonBarViewByTextFieldShouldClear:(UITextField *)textField{
-    
-    self.searchNavigaitonBarView.searchTextField.placeholder = self.kSearchTextFieldPlaceholder;
-    
-    return YES;
-     
-    
-}
-
--(void)onClickCancelButtonForSearchNavigaitonBarView:(YHSearchNavigationBarView *)searchNavigaitonBarView{
-    
-    [self.navigationController popViewControllerAnimated:NO];
-    
-}
-
 
 //MARK: - setupUI
 - (void)setup
@@ -276,6 +230,36 @@
         _searchNavigaitonBarView.delegate = self;
     }
     return _searchNavigaitonBarView;
+}
+
+- (YHSearchSuggestionViewController *)searchSuggestionVC
+{
+    if (!_searchSuggestionVC) {
+        YHSearchSuggestionViewController *searchSuggestionVC = [[YHSearchSuggestionViewController alloc] initWithStyle:UITableViewStyleGrouped];
+        __weak typeof(self) _weakSelf = self;
+        searchSuggestionVC.didSelectCellBlock = ^(UITableViewCell *didSelectCell) {
+            
+            __strong typeof(_weakSelf) _swSelf = _weakSelf;
+            _swSelf.searchNavigaitonBarView.searchTextField.text = didSelectCell.textLabel.text;
+            NSIndexPath *indexPath = [_swSelf.searchSuggestionVC.tableView indexPathForCell:didSelectCell];
+            
+            if ([_swSelf.delegate respondsToSelector:@selector(searchViewController:didSelectSearchSuggestionAtIndexPath:searchText:)]) {
+                [_swSelf.delegate searchViewController:_swSelf didSelectSearchSuggestionAtIndexPath:indexPath searchText:didSelectCell.textLabel.text];
+                [_swSelf saveSearchCacheAndRefreshView];
+            } else {
+                [_swSelf searchNavigaitonBarViewByTextFieldShouldReturn:_swSelf.searchNavigaitonBarView.searchTextField];
+            }
+        };
+        searchSuggestionVC.view.frame = CGRectMake(0, CGRectGetMaxY(self.searchNavigaitonBarView.frame), YHScreenW, YHScreenH - CGRectGetMaxY(self.searchNavigaitonBarView.frame));
+        searchSuggestionVC.view.backgroundColor = self.tableView.backgroundColor;
+        searchSuggestionVC.view.hidden = YES;
+        _searchSuggestionView = (UITableView *)searchSuggestionVC.view;
+        searchSuggestionVC.dataSource = self;
+        [self.view addSubview:searchSuggestionVC.view];
+        [self addChildViewController:searchSuggestionVC];
+        _searchSuggestionVC = searchSuggestionVC;
+    }
+    return _searchSuggestionVC;
 }
 
 
@@ -579,6 +563,21 @@
     
 }
 
+- (void)setSearchSuggestions:(NSArray<NSString *> *)searchSuggestions
+{
+//    if ([self.dataSource respondsToSelector:@selector(searchSuggestionView:cellForRowAtIndexPath:)]) {
+//        // set searchSuggestion is nil when cell of suggestion view is custom.
+//        _searchSuggestions = nil;
+//        return;
+//    }
+    
+    _searchSuggestions = [searchSuggestions copy];
+    self.searchSuggestionVC.searchSuggestions = [searchSuggestions copy];
+    
+    self.tableView.hidden = !self.searchSuggestionHidden && [self.searchSuggestionVC.tableView numberOfRowsInSection:0] && self.searchNavigaitonBarView.searchTextField.text.length!=0;
+    self.searchSuggestionVC.view.hidden = self.searchSuggestionHidden || ![self.searchSuggestionVC.tableView numberOfRowsInSection:0] || self.searchNavigaitonBarView.searchTextField.text.length==0;
+}
+
 
 - (void)setupHistorySearchNormalTags
 {
@@ -762,6 +761,107 @@
         [self.searchNavigaitonBarView searchResignFirstResponder];
     }
 }
+
+
+//MARK: - PPSearchNavigaitonBarViewDelegate
+
+-(void)searchNavigaitonBarViewByTextFieldDidChange:(UITextField *)textField {
+    
+    NSLog(@"%@",textField.text);
+    
+    if (textField.text.length == 0) {
+        self.searchNavigaitonBarView.searchTextField.placeholder = self.kSearchTextFieldPlaceholder;
+    }
+    
+    self.tableView.hidden = textField.text.length && !self.searchSuggestionHidden && [self.searchSuggestionVC.tableView numberOfRowsInSection:0];
+    self.searchSuggestionVC.view.hidden = self.searchSuggestionHidden || !textField.text.length || ![self.searchSuggestionVC.tableView numberOfRowsInSection:0];
+    if (self.searchSuggestionVC.view.hidden) {
+        self.searchSuggestions = nil;
+    }
+    [self.view bringSubviewToFront:self.searchSuggestionVC.view];
+    
+    
+    if ([self.delegate respondsToSelector:@selector(searchViewController:searchTextDidChange:searchText:)]) {
+        [self.delegate searchViewController:self searchTextDidChange:textField searchText:textField.text];
+    }
+    
+    
+    
+}
+
+-(BOOL)searchNavigaitonBarViewByTextFieldShouldReturn:(UITextField *)textField{
+    
+    //delegate 回调
+    if ([self.delegate respondsToSelector:@selector(searchViewController:didSearchWithSearchTextField:searchText:)]) {
+        [self.delegate searchViewController:self didSearchWithSearchTextField:textField searchText:textField.text];
+        [self saveSearchCacheAndRefreshView];
+        return YES;
+    }
+    
+    //block 回调
+    if (![textField.text isEqualToString:@""]){
+        self.searchNavigaitonBarView.searchTextField.placeholder = @"";
+        if (self.didSearchBlock) self.didSearchBlock(self, textField, textField.text);
+        [self saveSearchCacheAndRefreshView];
+        return YES;
+    }
+
+    return NO;
+ 
+}
+
+- (BOOL)searchNavigaitonBarViewByTextFieldShouldClear:(UITextField *)textField{
+    
+    self.searchNavigaitonBarView.searchTextField.placeholder = self.kSearchTextFieldPlaceholder;
+    
+    return YES;
+     
+    
+}
+
+-(void)onClickCancelButtonForSearchNavigaitonBarView:(YHSearchNavigationBarView *)searchNavigaitonBarView{
+    
+    [self.navigationController popViewControllerAnimated:NO];
+    
+}
+
+
+#pragma mark - YHSearchSuggestionViewDataSource
+- (NSInteger)numberOfSectionsInSearchSuggestionView:(UITableView *)searchSuggestionView
+{
+//    if ([self.dataSource respondsToSelector:@selector(numberOfSectionsInSearchSuggestionView:)]) {
+//        return [self.dataSource numberOfSectionsInSearchSuggestionView:searchSuggestionView];
+//    }
+    return 1;
+}
+
+- (NSInteger)searchSuggestionView:(UITableView *)searchSuggestionView numberOfRowsInSection:(NSInteger)section
+{
+//    if ([self.dataSource respondsToSelector:@selector(searchSuggestionView:numberOfRowsInSection:)]) {
+//        NSInteger numberOfRow = [self.dataSource searchSuggestionView:searchSuggestionView numberOfRowsInSection:section];
+//        searchSuggestionView.hidden = self.searchSuggestionHidden || !self.searchBar.text.length || 0 == numberOfRow;
+//        self.baseSearchTableView.hidden = !searchSuggestionView.hidden;
+//        return numberOfRow;
+//    }
+    return self.searchSuggestions.count;
+}
+
+- (UITableViewCell *)searchSuggestionView:(UITableView *)searchSuggestionView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    if ([self.dataSource respondsToSelector:@selector(searchSuggestionView:cellForRowAtIndexPath:)]) {
+//        return [self.dataSource searchSuggestionView:searchSuggestionView cellForRowAtIndexPath:indexPath];
+//    }
+    return nil;
+}
+
+- (CGFloat)searchSuggestionView:(UITableView *)searchSuggestionView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    if ([self.dataSource respondsToSelector:@selector(searchSuggestionView:heightForRowAtIndexPath:)]) {
+//        return [self.dataSource searchSuggestionView:searchSuggestionView heightForRowAtIndexPath:indexPath];
+//    }
+    return 44.0;
+}
+
 
 
 @end

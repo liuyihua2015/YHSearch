@@ -100,6 +100,9 @@
         _searchTextField.attributedPlaceholder = placeholder;
         _searchTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         _searchTextField.delegate = self;
+        
+        [_searchTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+
         [self.searchView addSubview:_searchTextField];
     }
     return _searchTextField;
@@ -154,15 +157,6 @@
     return YES;
 }
 
--(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    
-    if (self.delegate && [self.delegate respondsToSelector:@selector(searchNavigaitonBarViewByTextField:shouldChangeCharactersInRange:replacementString:)]) {
-        return  [self.delegate searchNavigaitonBarViewByTextField:textField shouldChangeCharactersInRange:range replacementString:string];
-    }  
-    return  NO;
-     
-}
-
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     
     if (textField.text.length < 1) {
@@ -184,6 +178,13 @@
     }
     return  NO;
     
+}
+
+-(void)textFieldDidChange:(UITextField *)textField {
+
+    if (self.delegate && [self.delegate respondsToSelector:@selector(searchNavigaitonBarViewByTextFieldDidChange:)]) {
+        return  [self.delegate searchNavigaitonBarViewByTextFieldDidChange:textField];
+    }
 }
 
 

@@ -11,7 +11,7 @@
 #import "YHSearchResultViewController.h"
 #import "YHExampleSearchViewController.h"
 
-@interface YHViewController ()
+@interface YHViewController ()<YHSearchViewControllerDelegate>
 
 @end
 
@@ -98,7 +98,31 @@
     searchViewController.hotSearchHeader.font = [UIFont systemFontOfSize:15];
     searchViewController.hotSearchHeader.textColor = [UIColor blackColor];
     
+    
+    searchViewController.delegate = self;
+    
+    
    [self.navigationController pushViewController:searchViewController animated:NO];
+    
+}
+
+#pragma mark - YHSearchViewControllerDelegate
+- (void)searchViewController:(YHSearchViewController *)searchViewController
+         searchTextDidChange:(UITextField *)searchTextField
+                  searchText:(NSString *)searchText{
+    
+    if (searchText.length) {
+        // Simulate a send request to get a search suggestions
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSMutableArray *searchSuggestionsM = [NSMutableArray array];
+            for (int i = 0; i < arc4random_uniform(5) + 10; i++) {
+                NSString *searchSuggestion = [NSString stringWithFormat:@"%@-%d", searchText,i];
+                [searchSuggestionsM addObject:searchSuggestion];
+            }
+            // Refresh and display the search suggustions
+            searchViewController.searchSuggestions = searchSuggestionsM;
+        });
+    }
     
 }
 
