@@ -30,9 +30,8 @@
             if (i < 5) {
                 model.isShowHot = YES;
             }
-            [arrM addObject:model];
+            [arrM addObject: model];
         }
-
         self.hotSearches = arrM;
 
 

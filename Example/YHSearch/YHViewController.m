@@ -56,7 +56,6 @@
 //    }
     
     
-    
     //创建子控制器
     YHExampleSearchViewController *searchViewController = [YHExampleSearchViewController searchViewControllerWithHotSearches:arrM searchTextFieldPlaceholder:@"搜索你的内容" didSearchBlock:^(YHSearchViewController *searchViewController, UITextField *searchTextField, NSString *searchText) {
         
@@ -85,7 +84,7 @@
     searchViewController.searchTagConfigure = configure;
     
     //位置设置
-//    searchViewController.hotSearchPositionIsUp = NO;
+    searchViewController.hotSearchPositionIsUp = NO;
 
     //个数不做控制
     searchViewController.searchHistoriesCount = 99;

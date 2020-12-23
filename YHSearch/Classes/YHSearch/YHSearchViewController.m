@@ -152,11 +152,13 @@
 
 + (instancetype)searchViewControllerWithHotSearches:(NSArray<YHSearchHotWordsModel *> *)hotSearches searchTextFieldPlaceholder:(NSString *)placeholder didSearchBlock:(PYDidSearchBlock)block
 {
-    for (YHSearchHotWordsModel * model in hotSearches) {
-        if (![model isKindOfClass:[YHSearchHotWordsModel class]]) {
+    [hotSearches enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (![obj isKindOfClass:[YHSearchHotWordsModel class]]) {
             YHMethodParameterError();
+            *stop = YES;
         }
-    }
+    }];
+    
     YHSearchViewController *searchVC = [self searchViewControllerWithHotSearches:hotSearches searchTextFieldPlaceholder:placeholder];
     searchVC.didSearchBlock = [block copy];
     return searchVC;
@@ -534,11 +536,12 @@
 - (void)setHotSearches:(NSArray *)hotSearches
 {
     
-    for (YHSearchHotWordsModel * model in hotSearches) {
-        if (![model isKindOfClass:[YHSearchHotWordsModel class]]) {
+    [hotSearches enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (![obj isKindOfClass:[YHSearchHotWordsModel class]]) {
             YHMethodParameterError();
+            *stop = YES;
         }
-    }
+    }];
     
     _hotSearches = hotSearches;
     if (0 == hotSearches.count || !self.showHotSearch) {
