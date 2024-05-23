@@ -1,21 +1,21 @@
 //
-//  YHSearchNavigationBarView.m
+//  SearchNavigationBarView.m
 //  YHSearch_Example
 //
 //  Created by Yihua Liu on 2020/11/18.
 //  Copyright © 2020 liuyihua2015@sina.com. All rights reserved.
 //
 
-#import "YHSearchNavigationBarView.h"
+#import "SearchNavigationBarView.h"
 #import "Masonry.h"
 #import "YHSearchConst.h"
 
-@interface YHSearchNavigationBarView ()<UITextFieldDelegate>
+@interface SearchNavigationBarView ()<UITextFieldDelegate>
 @property(nonatomic,strong)UIView * line;
 
 @end
 
-@implementation YHSearchNavigationBarView
+@implementation SearchNavigationBarView
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
@@ -130,18 +130,15 @@
 }
 
 -(void)searchBecomeFirstResponder{
-    if(self.alpha > 0) {
-        [self.searchTextField becomeFirstResponder];
-    }
+    [self.searchTextField becomeFirstResponder];
 }
 
 /**
  searchTextField失去第一响应者
  */
 -(void)searchResignFirstResponder{
-    if(self.alpha > 0) {
-        [self.searchTextField resignFirstResponder];
-    }
+    
+    [self.searchTextField resignFirstResponder];
 }
 
 //MARK:点击取消按钮

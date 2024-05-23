@@ -1,6 +1,6 @@
 {
   "name": "YHSearch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "简单的历史和热门搜索框",
   "description": "一个简单的历史搜索和热门搜索控制器",
   "homepage": "https://github.com/liuyihua2015/YHSearch",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/liuyihua2015/YHSearch.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
   "source_files": "YHSearch/Classes/**/*",
   "resource_bundles": {

@@ -14,7 +14,7 @@
 #import "NSBundle+YHSearchExtension.h"
 #import "YHSearchTagConfigure.h"
 
-#define YHSEARCH_MARGIN 15
+#define YHSEARCH_MARGIN 16
 #define YHSEARCH_BACKGROUND_COLOR YHSEARCH_COLOR(255, 255, 255)
 
 #ifdef DEBUG
@@ -35,28 +35,19 @@
 #define YHSEARCH_SCREEN_SIZE CGSizeMake(YHScreenW, YHScreenH)
 
 //屏幕尺寸
-#define YH_iPhoneX_XS ([UIScreen instancesRespondToSelector:@selector(nativeBounds)] ?CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] nativeBounds].size) : NO)
-#define YH_iPhoneXR ([UIScreen instancesRespondToSelector:@selector(nativeBounds)] ?CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] nativeBounds].size) : NO)
-#define YH_iPhoneXSMAX ([UIScreen instancesRespondToSelector:@selector(nativeBounds)] ?CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] nativeBounds].size) : NO)
-
-#define YH_IsFullScreen (YH_iPhoneXR ||YH_iPhoneX_XS || YH_iPhoneXSMAX)
+/**
+ 导航栏高度
+ */
 #define YH_NavgationBarHeight 44
 /**
  状态栏高度
  */
-#define YH_StatusBarHeight (YH_IsFullScreen ? 44 : 20)
+#define YH_StatusBarHeight  [UIApplication sharedApplication].statusBarFrame.size.height
 /**
- 导航栏高度
+ 导航栏高度+状态栏高度
  */
-#define YH_NavgationFullHeight (YH_IsFullScreen ? 88 : 64)
-/**
- 底部按钮安全高度
- */
-#define YH_BottomSafeHeight (YH_IsFullScreen ? 34 : 0)
-/**
- 底导航高度
- */
-#define YH_TabBarHeight (YH_IsFullScreen ? 83 : 49)
+#define YH_NavgationFullHeight YH_NavgationBarHeight + YH_StatusBarHeight
+
 
 //历史记录
 #define YHSEARCH_SEARCH_HISTORY_CACHE_PATH [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"YHSearchhistories.plist"] // the path of search record cached

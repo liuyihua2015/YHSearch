@@ -18,23 +18,17 @@
     [super viewDidLoad];
     
     //模拟请求数据
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-
-        //可以在这里赋值
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSMutableArray * arrM = [NSMutableArray array];
-
         for (int i = 0; i<10; i++) {
-
-            YHSearchHotWordsModel * model = [[YHSearchHotWordsModel alloc]init];
-            model.title = [NSString stringWithFormat:@"热么词%d",i];
-            if (i < 5) {
-                model.isShowHot = YES;
+            if (i % 2 == 0)
+            {
+                [arrM addObject:[NSString stringWithFormat:@"热门词-%d",i]];
+            }else{
+                [arrM addObject:[NSString stringWithFormat:@"热门词组火-%d",i]];
             }
-            [arrM addObject: model];
         }
         self.hotSearches = arrM;
-
-
     });
    
     

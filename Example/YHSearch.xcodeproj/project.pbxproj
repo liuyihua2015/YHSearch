@@ -26,6 +26,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		BB52BA932566071600F6DBDD /* YHSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB52BA922566071600F6DBDD /* YHSearchResultViewController.m */; };
 		BBF701F4256755030082E607 /* YHExampleSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF701F3256755020082E607 /* YHExampleSearchViewController.m */; };
+		DD50F73B2BFF297E00117B8D /* SearchNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD50F7392BFF297E00117B8D /* SearchNavigationBarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		BBF701F2256755020082E607 /* YHExampleSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHExampleSearchViewController.h; sourceTree = "<group>"; };
 		BBF701F3256755020082E607 /* YHExampleSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHExampleSearchViewController.m; sourceTree = "<group>"; };
 		BDE848D409A0DBBE6003C8FE /* Pods-YHSearch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHSearch_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YHSearch_Tests/Pods-YHSearch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD50F7392BFF297E00117B8D /* SearchNavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchNavigationBarView.m; sourceTree = "<group>"; };
+		DD50F73A2BFF297E00117B8D /* SearchNavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchNavigationBarView.h; sourceTree = "<group>"; };
 		F923E6F112D347DCACF5806B /* Pods-YHSearch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHSearch_Example.release.xcconfig"; path = "Target Support Files/Pods-YHSearch_Example/Pods-YHSearch_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FA28703DFC273E273A9F8E9F /* YHSearch.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YHSearch.podspec; path = ../YHSearch.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
@@ -138,6 +141,8 @@
 		6003F593195388D20070C39A /* Example for YHSearch */ = {
 			isa = PBXGroup;
 			children = (
+				DD50F73A2BFF297E00117B8D /* SearchNavigationBarView.h */,
+				DD50F7392BFF297E00117B8D /* SearchNavigationBarView.m */,
 				6003F59C195388D20070C39A /* YHAppDelegate.h */,
 				6003F59D195388D20070C39A /* YHAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -258,6 +263,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "liuyihua2015@sina.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 74MB64V8BE;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -397,6 +405,7 @@
 			files = (
 				6003F59E195388D20070C39A /* YHAppDelegate.m in Sources */,
 				BB52BA932566071600F6DBDD /* YHSearchResultViewController.m in Sources */,
+				DD50F73B2BFF297E00117B8D /* SearchNavigationBarView.m in Sources */,
 				6003F5A7195388D20070C39A /* YHViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				BBF701F4256755030082E607 /* YHExampleSearchViewController.m in Sources */,
@@ -527,9 +536,11 @@
 			baseConfigurationReference = A14911E3E3FA6C83438C5134 /* Pods-YHSearch_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 74MB64V8BE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YHSearch/YHSearch-Prefix.pch";
 				INFOPLIST_FILE = "YHSearch/YHSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -543,9 +554,11 @@
 			baseConfigurationReference = F923E6F112D347DCACF5806B /* Pods-YHSearch_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 74MB64V8BE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YHSearch/YHSearch-Prefix.pch";
 				INFOPLIST_FILE = "YHSearch/YHSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

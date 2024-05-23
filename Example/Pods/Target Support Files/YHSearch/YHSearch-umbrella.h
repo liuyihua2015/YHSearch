@@ -17,8 +17,8 @@
 #import "NSBundle+YHSearchExtension.h"
 #import "UIColor+YHSearchExtension.h"
 #import "UIView+YHSearchExtension.h"
-#import "YHSearchHotWordsModel.h"
 #import "YHSearch.h"
+#import "YHSearchSuggestionViewController.h"
 #import "YHSearchViewController.h"
 
 FOUNDATION_EXPORT double YHSearchVersionNumber;

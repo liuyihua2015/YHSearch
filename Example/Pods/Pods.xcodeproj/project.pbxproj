@@ -7,350 +7,329 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEEB1F6C31B89937C80AD46D2ECA574 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		025B4B21DC84CEB4C1A338809C36ECB4 /* YHSearchTagConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2EAA8A754FC1E0CC3EBAB75BDC8251 /* YHSearchTagConfigure.m */; };
-		05A040F35BF1C88F869404E1A940B493 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 98E5B4DDA3A6742DA86BC33EDEB35F59 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05EA1447EEA0EB669F8DEE73964A7C60 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B32DC82B087A3199F46DEE37F30C42D4 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0684FC0C28B57A6CE9E3F201B6CE0877 /* YHSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E29DB59344ECAFC7B1A35AF3539767 /* YHSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07F1B6EFB371BD585C99120E2CD37B22 /* YHSearch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F7FBD06C7654DAF6932980BD8F3D2368 /* YHSearch.bundle */; };
-		0967598607D521318F69D7D39D517B20 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FB1357DE7D247BE34CCB29EDCCFAC /* ViewController+MASAdditions.m */; };
-		098630ECDB64ED7B89F5F687C82B4AC3 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA48B7947D5AC0DDE52563C2DC8A5E3D /* NSArray+MASAdditions.m */; };
-		0AF1AD35706D90B1A91F291B899EF8C0 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EDFA8CC2AD68834644662EE1AC469B03 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A282C53A123426D0DC6CB96D76A6B7 /* UIApplication+StrictKeyWindow.m */; };
-		121439AB6B4061E1B6222256817548FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CFB9B3D4F21626ACCEEDD451DCE930 /* XCTest.framework */; };
-		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DA303DBB7E087CE9560BA4AE5D91CC /* UIImage+Diff.m */; };
-		1972E85F0FCD0F3EAF28ED7CD036286E /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 268C4808A7B284FD5CE12AF500644E1A /* Masonry-dummy.m */; };
-		1E9CB62221D077EC7482DE47CB237034 /* YHSearchHotWordsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5571DDCAFFDF4C6DA7EB142CCD073 /* YHSearchHotWordsModel.m */; };
-		280D36330BAC5715615FF4A8B42D60D6 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A394C2C6ABAE5BF5090CF2AD98C696AF /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		297A3627CF2F032CBFDC61D1A3786E63 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E8B0053FC9C12650256AC7795C1C6 /* MASViewAttribute.m */; };
-		2C62546C9D94C363438B38CE0D179864 /* YHSearchNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AC3D0926A4B6758E552A67DF849BBF /* YHSearchNavigationBarView.m */; };
-		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 9016A8DDB9A4258DCC8B1B3DDECA0207 /* UIImage+Compare.m */; };
-		2E4C0BD2363ABABB6470FBA5415985AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18056459E0FCB26B89B6DB59A4B7F083 /* QuartzCore.framework */; };
-		346080C0D1CA23399ADD739D722D7CEF /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 05ED7991BE91B391C4F38B25354DEEB6 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39A85CB8626484919FA784A041214139 /* YHBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A0263D5B40F7DF3C52FB661FE64926A /* YHBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DA5F1D8E51CDD102A871C2F37770C7B /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = E1664911F55968A776BA11F00D8E434D /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = F793D8588CD60BFFC82AF37C9BC308D0 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		469A3CBA1DF8CC4815464A5A87E3C325 /* YHSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B00416A212E714DCB514C71A854E1 /* YHSearchViewController.m */; };
-		4B0981F9AC628CF5100C50FF4A163A4A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 602E46B1DC438E157FEFDB89FFC1FEE0 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54A8732B88F2882CB216E09043648836 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0EC6ADF2AD560D6E72E86030F1C2EF79 /* en.lproj */; };
-		58AF805046CFD9986EFEAACCBA61F9BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E3E54349F0051FE4FECA273F387927 /* Foundation.framework */; };
-		5D5AB502D85BF8E27246A5964F6B3E9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289CFCDFEED23B9E649A5FD89EBB2429 /* UIKit.framework */; };
-		64FF4AE8CFAAFFB8AA900E08958170EA /* NSBundle+YHSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0DA6CE615E4F352A6CFCBD05A46D5E /* NSBundle+YHSearchExtension.m */; };
-		65C595B941ACA24917130D94143FD50A /* UIView+YHSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C9793CB790939D78D330482E1D7A90C9 /* UIView+YHSearchExtension.m */; };
-		6A6AD3A5BBDBFD0B4AF936BD518EC0B1 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F83E555D0CF0CB47EB4F7E712AAAE4 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6AD30C145B0299AF0D76FA258332D9C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E3E54349F0051FE4FECA273F387927 /* Foundation.framework */; };
-		6BA64F8422531F0A01276DC1E80965E9 /* hot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FAE4AAFEAB8DEC40919030C14DF5900 /* hot@3x.png */; };
-		6D2A63E53C83CFD3C0BFEFA1DB545916 /* Pods-YHSearch_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 643BAC9DBAE239E5CA901C3EDD5D97FB /* Pods-YHSearch_Example-dummy.m */; };
-		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B839A35A2BFBEC3479FF1552F569BC /* FBSnapshotTestCase-dummy.m */; };
-		78B2727EE5D693F58D019DB098005101 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AAAA6DA488D5DF77D99C020E582627 /* MASConstraintMaker.m */; };
-		79DCAA485FE0D5A935A00320CA1BECD5 /* YHSearchTagConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = 495C50CE6F9D04094F017D20302227DA /* YHSearchTagConfigure.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7BFF65958F014760B6AC4742824892EB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 823AE4B4979D09F91ADB18679CF355CD /* MASCompositeConstraint.m */; };
-		84C54E21C450ADDD5613E2ED4D286031 /* UIView+YHSearchExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D96A8ED8F2A5A91BF708CE74D78596A /* UIView+YHSearchExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8539B851E01A58467BE49CA3FA77223C /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A6BCDB8B38970BAAE92CDDEBB3B20 /* MASLayoutConstraint.m */; };
-		85A569FCF07F94F9A8A3015DF9C112E6 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 875E144FB09FA6EE16387A3E1609FBEB /* zh-Hans.lproj */; };
-		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD9A6CFD4331B9A23C2F7983498CF3 /* FBSnapshotTestController.m */; };
-		8B92011C9373001132C8148BFC8F50B3 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 636796616D38EB5C7185BD684C7AE48B /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C43B4427803F45E5EE12A79C135ABCEE /* FBSnapshotTestCase.m */; };
-		8D4D1F6E4709EBB13974E95DC1059DDC /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B17D6A5548097996EE3796656A32B6D2 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D65CE579E516BDD5FB36CAA21D693F6 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 351B469F82A69464763DA9A8A556D5E4 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E4A3699E247454A185A54CB6A2C5430 /* YHSearchHotWordsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D76C50858110DE0902C171F031B7C452 /* YHSearchHotWordsModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F79192BDAB026FBE46466E26DF69DEE /* Pods-YHSearch_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5163BD81BB134D2D9474F954E860E066 /* Pods-YHSearch_Tests-dummy.m */; };
-		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 67380272F2DF7819A336DF552AD92896 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91569118113FF0E4D2D79AE26835B3FB /* YHSearch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 351F58B4D9722C92C9E881C25DBE9BEC /* YHSearch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		941955A19C40899D275604E6E9C21A6D /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 66BA6286FFDDBFEF509A327789F6D690 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97B1FB7E8D52A54333D5AF7E6F5CB969 /* empty@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 835D045AB14545352319F1AB0272BE36 /* empty@3x.png */; };
-		9C7BCC2903CCFAE2C314DDDA8538D6CE /* UIColor+YHSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C668AA72D23D2B61578416E08C3F0480 /* UIColor+YHSearchExtension.m */; };
-		9D546E1168C04B0B2EAE005D9275D18B /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D39570D3C32595968B12039E56A71CC2 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3538C14800BA6D283B6500C766E4F0D3 /* SwiftSupport.swift */; };
-		A0347067AF1C246A7C1EF8F404A20BDC /* NSBundle+YHSearchExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8414A4C1EBCC90B1362145718BE648 /* NSBundle+YHSearchExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A35FBEEC7D088AEC05297E8292A32C77 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0204C03E3631573430F1065E0C562121 /* View+MASAdditions.m */; };
-		A4B28B865D69AE14ADC40EA8BD96CF59 /* empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EA050AA9F8FAB5C0A5037774B6FE9 /* empty@2x.png */; };
-		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A691C70504B82F1D79E0F50DF6B488 /* UIImage+Snapshot.m */; };
-		A81F669587771B3EC047EF11647F5C2A /* UIColor+YHSearchExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DFACA8B3DBD4C32C3372337456CFB2F /* UIColor+YHSearchExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AED91BCB4FDE8FF04DD3B04241FEB3F3 /* YHSearchConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 41FBF6FEFEE3DCA6505A8BA93906EFBE /* YHSearchConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B518689EA9C990A92C1D8738D46723D9 /* YHSearchConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E38282865DF2BEEB33D0D0B44E384A7 /* YHSearchConst.m */; };
-		B6D0AB04549FFB65C239CC57B816C675 /* YHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F90537C71A6B0A5CEC45F949FC1D72B1 /* YHBaseViewController.m */; };
-		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 43FD0500F155110FC81738ABCFD8722E /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B7D645EC004610E8A581E532D28771EC /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E502E95D75F8DF19C71E7419515430D /* MASViewConstraint.m */; };
-		BBC140F1259331D300606406 /* YHSearchSuggestionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BBC140E72593316B00606406 /* YHSearchSuggestionViewController.h */; };
-		BBC140FE259331D700606406 /* YHSearchSuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC140E82593316B00606406 /* YHSearchSuggestionViewController.m */; };
-		BD4953074A12E769ED4E6C94F5E73694 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289CFCDFEED23B9E649A5FD89EBB2429 /* UIKit.framework */; };
-		C0861ADB4C5FA30F4F9E051F7638A264 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CB974288A2892A90F9702F03E0697C /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		C29063078660E1E12D049F8DB15B4AC2 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571D18C2E4315CA0EE50281AEB95D9C8 /* Masonry.framework */; };
-		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 8940D361FD89F610F4C862B772A33E51 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E3E54349F0051FE4FECA273F387927 /* Foundation.framework */; };
-		CBA1839B77B49970308D1415C1648530 /* hot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3D585D77B0AAEF524190789BFC78957 /* hot@2x.png */; };
-		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 2547F69451A0A27A16D11D9705986E91 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		D4556E601BC94DFE96331B3336089FEF /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CCA1EEEF564C9B552BDE95B6973784 /* search@3x.png */; };
-		D64BF60A30B6092169D47DBB012DFA2D /* YHSearchViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FB615B3EF3D4ADCD81DF519D67793926 /* YHSearchViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D95681EACB7C0BAADFC3FD149CBD7FAA /* YHSearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA304BF3B90CA8488BA37F9951CFB13 /* YHSearch-dummy.m */; };
-		DA50F6804455DDAA87A9A02E19746542 /* Pods-YHSearch_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67C130B497B965E2C685D19A93AB97B2 /* Pods-YHSearch_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0104CE0BC75239885E6E9F4D35C92FB /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D487755E7D0F85493EF03FEEB57A4FA /* search@2x.png */; };
-		E03FEF9F045E4C8A40E14749662F3B4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E3E54349F0051FE4FECA273F387927 /* Foundation.framework */; };
-		E57A4C3236CA2B16580E1C99C3A81F9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E3E54349F0051FE4FECA273F387927 /* Foundation.framework */; };
-		E7CA20228B3583F41927813EE904CAD3 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 909597D5A7270BB0B845363BD757AC74 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0A71045D2C733C3BD6340095E5E033 /* FBSnapshotTestCasePlatform.m */; };
-		E8DD5D1D406150E1C80AD015271B6848 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A12C368749FD2EEF1BB8849594446F /* MASConstraint.m */; };
-		EABEC95287939DFFE37143AE87FF263D /* Pods-YHSearch_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F56D9FAFFF2818921ADDC5FCE1FB7C92 /* Pods-YHSearch_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAE8B0895956885A752B173683A0D889 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = FCE1DDE1A00CE0531A4DF74A6C2EB5F8 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = E20173728E322CA943398A88168AD012 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B367BF20EC952AD50F06D3171735002D /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA72CAB2E485FA1A2A8F6EC0F4A6AE8A /* YHSearchNavigationBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = A8B8B000C9AB85FB583D011F8299D51C /* YHSearchNavigationBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFBFA90F7BC3E7CF50F8A5CF0A8B264 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 25A8E30D4F9F5E4535B69508873FAD12 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B41BF4142707B7517C6FC153F9DDF3C /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5D2D27A93566D73ED9C31981067344EF /* en.lproj */; };
+		0E5D3654FCBC54BAD0FB7D4ABDDCD674 /* Pods-YHSearch_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F56D9FAFFF2818921ADDC5FCE1FB7C92 /* Pods-YHSearch_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E8CCAE597756C61B2D7B60EEF4A29E4 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A394C2C6ABAE5BF5090CF2AD98C696AF /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15C50A8D081A76B6134C9927912C5267 /* YHSearchConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 342F22C18295C2647628D81E17A04460 /* YHSearchConst.m */; };
+		19300CF68F5718C6F9C3476F1A98C1DC /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 823AE4B4979D09F91ADB18679CF355CD /* MASCompositeConstraint.m */; };
+		1B433A1BF92BBD5811F61A000E4771C2 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 25A8E30D4F9F5E4535B69508873FAD12 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BBBEBB3D267E146E1BD7A84471ED851 /* NSBundle+YHSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0213122F7588CA900B03618A69D0521E /* NSBundle+YHSearchExtension.m */; };
+		1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B367BF20EC952AD50F06D3171735002D /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204EFE19273EECE7D92FB812F36C6B79 /* YHSearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D809CD2EB2FAE4A25F3D35E49B4019 /* YHSearch-dummy.m */; };
+		229D9F18EBB3F82184EF61339AEDB017 /* UIColor+YHSearchExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = CB6E3F687A07E5134AC9142205518236 /* UIColor+YHSearchExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2839E3707C14798138E8A0C72ACE4C25 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B17D6A5548097996EE3796656A32B6D2 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3538C14800BA6D283B6500C766E4F0D3 /* SwiftSupport.swift */; };
+		2A06DD642C67F7DF1849485DAF544B87 /* YHSearchNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 688FF39F03B21580951353EEDA750701 /* YHSearchNavigationBarView.m */; };
+		2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 67380272F2DF7819A336DF552AD92896 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A691C70504B82F1D79E0F50DF6B488 /* UIImage+Snapshot.m */; };
+		2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0A71045D2C733C3BD6340095E5E033 /* FBSnapshotTestCasePlatform.m */; };
+		31F7C35C8863FA25A741A884E21BE7D0 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 05ED7991BE91B391C4F38B25354DEEB6 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 43FD0500F155110FC81738ABCFD8722E /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3BE930DA88488FE48B7150F8437EAD4B /* YHSearchTagConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B72EA96DDE54861359F0E8E6AA9BAC8 /* YHSearchTagConfigure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BFAC66E64756EBC1C8C06135067C6DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		3C40504C4979B5D85F07FDF0848212C5 /* Pods-YHSearch_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5163BD81BB134D2D9474F954E860E066 /* Pods-YHSearch_Tests-dummy.m */; };
+		3D0EFFE30E3193932A034220E3C4C0FA /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 602E46B1DC438E157FEFDB89FFC1FEE0 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F9F44D0F900B6E828CCD5B446E8DCC6 /* YHSearch-YHSearch in Resources */ = {isa = PBXBuildFile; fileRef = F7FBD06C7654DAF6932980BD8F3D2368 /* YHSearch-YHSearch */; };
+		4783805DF405E6624F098ABE48CC0533 /* YHSearchSuggestionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B418E0E38A981197ECC91CC8B98A4A /* YHSearchSuggestionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CC9B43AD90714A316815FAA71DC89A2 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AAAA6DA488D5DF77D99C020E582627 /* MASConstraintMaker.m */; };
+		53305278F1654F968B4E02DF71B098BE /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E8B0053FC9C12650256AC7795C1C6 /* MASViewAttribute.m */; };
+		54BEFE9F75005D327641073B838C6776 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A6BCDB8B38970BAAE92CDDEBB3B20 /* MASLayoutConstraint.m */; };
+		5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = F793D8588CD60BFFC82AF37C9BC308D0 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		567ABE0681AA82748435E32386DE12D7 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FB1357DE7D247BE34CCB29EDCCFAC /* ViewController+MASAdditions.m */; };
+		5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B839A35A2BFBEC3479FF1552F569BC /* FBSnapshotTestCase-dummy.m */; };
+		61225B0B9AEC591476E30C9A575013B3 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 909597D5A7270BB0B845363BD757AC74 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 8940D361FD89F610F4C862B772A33E51 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66EBB94406213F8ED6D8A0697BCEB26D /* YHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A857A392D39FE4CFAB1BD081470BC2 /* YHBaseViewController.m */; };
+		67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 2547F69451A0A27A16D11D9705986E91 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6A8908B0189F7350E767023CAA281F8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		6D055BE6AC5B925B31EDD5A809826E9A /* YHSearchSuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523621257D4540AA061CCA1C59476E3D /* YHSearchSuggestionViewController.m */; };
+		715AB2C777F6FCAB5EE0C667A909B698 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = E1664911F55968A776BA11F00D8E434D /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A282C53A123426D0DC6CB96D76A6B7 /* UIApplication+StrictKeyWindow.m */; };
+		7569A4D258B2138AC473600111C22421 /* Pods-YHSearch_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67C130B497B965E2C685D19A93AB97B2 /* Pods-YHSearch_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78251F42EB680FB72F040A1986279CD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		7B05A8DE072977F90AA84A0E98E23167 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A12C368749FD2EEF1BB8849594446F /* MASConstraint.m */; };
+		7B42B74CA42D6AE7F7ED3EB1D1B5E012 /* UIView+YHSearchExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 747AAE26701396E124E195A45732A025 /* UIView+YHSearchExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B622507C3005DCB03C2DF5AB0B05D8F /* YHSearchTagConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = D8979E0BE22FD53BF97EE07D6DE842BD /* YHSearchTagConfigure.m */; };
+		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C43B4427803F45E5EE12A79C135ABCEE /* FBSnapshotTestCase.m */; };
+		8171D105E2C5CD3C1357D544942B4446 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
+		835AE351871EE881E9C57EC2E33BD54B /* YHSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A41F6CB964CAC030C3BF4EFEEC228B4 /* YHSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8646A919BFE36A8B745A4CA0C7EAF345 /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6903C09D8F87A26BB77AEC62C7BE5F9 /* delete@2x.png */; };
+		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
+		8A01D02C96392E646F7EFAD4C82CDC17 /* empty@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23F4B9B4C7E3724386CDFB0E8E6CB2A9 /* empty@3x.png */; };
+		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = E20173728E322CA943398A88168AD012 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8AE868BC3E2E6FC92F4717835180C47D /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B32DC82B087A3199F46DEE37F30C42D4 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
+		A1336977ADAAD492D6CFD089A8C6E358 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0204C03E3631573430F1065E0C562121 /* View+MASAdditions.m */; };
+		A1A2CF7BDFFF184E5960E82767DF75F8 /* Pods-YHSearch_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 643BAC9DBAE239E5CA901C3EDD5D97FB /* Pods-YHSearch_Example-dummy.m */; };
+		A6199C781771C153CEE5856430D487DE /* delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 230E1752FCDDC1355D1BA9AF643179B7 /* delete@3x.png */; };
+		A83A6757F6C0003332D57B41FE24BEEA /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D39570D3C32595968B12039E56A71CC2 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC708CCF2093EFD66D172F66A476AB63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		AF5889EECB090178EA7F75F8BF2BD209 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7677908E4731A350BFB5133719434758 /* zh-Hans.lproj */; };
+		B10646B6AF73D470221EF25A5DEEEB6F /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 636796616D38EB5C7185BD684C7AE48B /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4BE7728D87333785F811FED48CF134E /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 351B469F82A69464763DA9A8A556D5E4 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 9016A8DDB9A4258DCC8B1B3DDECA0207 /* UIImage+Compare.m */; };
+		B61AA5459C2B345AD6D84D8A5111C9CE /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F83E555D0CF0CB47EB4F7E712AAAE4 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B69DA2E54220B3CFC1C203E788C797AE /* UIView+YHSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A9405538B4B9318D3D24560CBFA20DD0 /* UIView+YHSearchExtension.m */; };
+		B786047922B35AA1BEBECB3152229C7C /* UIColor+YHSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B366E8E3B2A74126C85605F4E724A30E /* UIColor+YHSearchExtension.m */; };
+		B86A71D059A6D74E6E46B628DA6C191C /* YHSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2702379FC80B941E1E6601277AEF5F /* YHSearchViewController.m */; };
+		B943EF1FB74845F8D77DED0185E144C9 /* YHBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 275201269B31CA1291CA65790C8074AF /* YHBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE050DABC9BF806B3379AFD2367F4194 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EDFA8CC2AD68834644662EE1AC469B03 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA99A49E5F8DA685E33DABA606041FF /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 66BA6286FFDDBFEF509A327789F6D690 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2F2FFEB7A03BFB59B6F2D61D18C11E7 /* YHSearchNavigationBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = DACF1F44D13644E803BFCD4B9BF02ADB /* YHSearchNavigationBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD9A6CFD4331B9A23C2F7983498CF3 /* FBSnapshotTestController.m */; };
+		C7D83D99D755676EF8A09CC77845BAF4 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CB974288A2892A90F9702F03E0697C /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		C9375F078B54A9030D4B9C2E73222A5D /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA48B7947D5AC0DDE52563C2DC8A5E3D /* NSArray+MASAdditions.m */; };
+		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
+		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DA303DBB7E087CE9560BA4AE5D91CC /* UIImage+Diff.m */; };
+		CECDB459AFB5AD0040AF86378F2DBF97 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 268C4808A7B284FD5CE12AF500644E1A /* Masonry-dummy.m */; };
+		CEE7BDCC3F3073CBBF7A76BC6CF3E519 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = FCE1DDE1A00CE0531A4DF74A6C2EB5F8 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF935D20452EACBE56CBA31F5CA36EE6 /* YHSearchConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 604935B2F642DBB48799FED5D5290305 /* YHSearchConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3EE647B9C79CC23E969D116C2B34BC8 /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C74341F859A346B0C3AA20A9B487F2A1 /* search@3x.png */; };
+		D955B779176618CF4EF64F5F2A666BA2 /* YHSearchViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A6792C32CA8F5D7BAE90E4BE9F694EEA /* YHSearchViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCD317350A38BDC7F25607C61D78FCDD /* NSBundle+YHSearchExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E991BED5217C77FFAEF19D14C07959D /* NSBundle+YHSearchExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0D21033DBA416CEBC098BC6DFCE228D /* YHSearch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE685847095BBC7DEF9A13E276F61121 /* YHSearch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E220A7E8941F84087FD270D2BB2430E7 /* empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9426474C074A8CF0A8AA58308954E16 /* empty@2x.png */; };
+		E53FCD0CD1526B53074ED4EEF00131E9 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 98E5B4DDA3A6742DA86BC33EDEB35F59 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FB269534400D40C1CE67D18EDD8A9A /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E502E95D75F8DF19C71E7419515430D /* MASViewConstraint.m */; };
+		EB06D99F6F966F8D86A05D475CC476CE /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2AC2419ADE71E37B5FED7AEA50944A /* search@2x.png */; };
+		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEEB1F6C31B89937C80AD46D2ECA574 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1B7366F3BE2A8382B8C8330E83421892 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
-			remoteInfo = FBSnapshotTestCase;
-		};
-		445F76E922FF10ABE50C2D8EEB232F26 /* PBXContainerItemProxy */ = {
+		65FCBDF10DF1A82A53F54033BFC43191 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
 			remoteInfo = Masonry;
 		};
-		95C3E8D104E8714640520FA9095C6FA5 /* PBXContainerItemProxy */ = {
+		6E7E543307114A5476B8D3DB7ECF9D86 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A220019C1D765FBEA880A16D61D91A4D;
 			remoteInfo = "Pods-YHSearch_Example";
 		};
-		A62C29CA0149D3A47C9CCEC0711FB221 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8BFFF6547B0216DCE09DC633829DB44E;
-			remoteInfo = YHSearch;
-		};
-		C47770A8408148B727BF9D6D6C6033DB /* PBXContainerItemProxy */ = {
+		7C2E12CEBCDF1A95FCF780F1D5CED345 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
 			remoteInfo = Masonry;
 		};
-		CCD1D307D4B2C881A4ADBB78EEA07A9A /* PBXContainerItemProxy */ = {
+		D959858DF16F62037DEC073772378A6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F0A012D0CE763888330AA26AA2F8F9A8;
 			remoteInfo = "YHSearch-YHSearch";
 		};
+		F2A4E506D59A19367A172E53D9974242 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BFFF6547B0216DCE09DC633829DB44E;
+			remoteInfo = YHSearch;
+		};
+		F3B8A7DFED247947419C2A6AF122C12E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
+			remoteInfo = FBSnapshotTestCase;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00BE78633C443BE699A3736C3E1EBD71 /* Pods-YHSearch_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YHSearch_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		00FFD0E5C1BE2279C48B5B801198861C /* YHSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YHSearch.debug.xcconfig; sourceTree = "<group>"; };
 		0204C03E3631573430F1065E0C562121 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		0213122F7588CA900B03618A69D0521E /* NSBundle+YHSearchExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YHSearchExtension.m"; sourceTree = "<group>"; };
 		03F83E555D0CF0CB47EB4F7E712AAAE4 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
+		046C2CC886A5E5C441448F6E24DAC514 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		04DBA5D9D467E921B4B19C0DDD06E742 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
 		05ED7991BE91B391C4F38B25354DEEB6 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		0B0A71045D2C733C3BD6340095E5E033 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		0D72A916789B79AB69762C3622931BE3 /* YHSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YHSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D72A916789B79AB69762C3622931BE3 /* YHSearch */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YHSearch; path = YHSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D85C3E6E50008C91B87CB4DB841D90A /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
-		0EC6ADF2AD560D6E72E86030F1C2EF79 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = YHSearch/Assets/en.lproj; sourceTree = "<group>"; };
 		17AAAA6DA488D5DF77D99C020E582627 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
-		18056459E0FCB26B89B6DB59A4B7F083 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		184DD14C00CA1A9D3DC375878AAC19A1 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
-		1CA304BF3B90CA8488BA37F9951CFB13 /* YHSearch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YHSearch-dummy.m"; sourceTree = "<group>"; };
-		1CF5571DDCAFFDF4C6DA7EB142CCD073 /* YHSearchHotWordsModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YHSearchHotWordsModel.m; sourceTree = "<group>"; };
+		190C2EEAD8E46609EB2A5AAE8CC6BB40 /* YHSearch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YHSearch-Info.plist"; sourceTree = "<group>"; };
 		1D0FB1357DE7D247BE34CCB29EDCCFAC /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1F2A6BCDB8B38970BAAE92CDDEBB3B20 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		21CFB9B3D4F21626ACCEEDD451DCE930 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		22573F36D6540281EBD2050275303943 /* YHSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YHSearch.release.xcconfig; sourceTree = "<group>"; };
+		230E1752FCDDC1355D1BA9AF643179B7 /* delete@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "delete@3x.png"; path = "YHSearch/Assets/delete@3x.png"; sourceTree = "<group>"; };
+		23F4B9B4C7E3724386CDFB0E8E6CB2A9 /* empty@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "empty@3x.png"; path = "YHSearch/Assets/empty@3x.png"; sourceTree = "<group>"; };
 		2547F69451A0A27A16D11D9705986E91 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		25A8E30D4F9F5E4535B69508873FAD12 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		268C4808A7B284FD5CE12AF500644E1A /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		275201269B31CA1291CA65790C8074AF /* YHBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YHBaseViewController.h; sourceTree = "<group>"; };
 		27DA303DBB7E087CE9560BA4AE5D91CC /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		289CFCDFEED23B9E649A5FD89EBB2429 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		2CEEB1F6C31B89937C80AD46D2ECA574 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		2D96A8ED8F2A5A91BF708CE74D78596A /* UIView+YHSearchExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+YHSearchExtension.h"; sourceTree = "<group>"; };
-		306ABF75753D9EBBD1A77202E6E3F740 /* Pods_YHSearch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHSearch_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		306ABF75753D9EBBD1A77202E6E3F740 /* Pods-YHSearch_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-YHSearch_Example"; path = Pods_YHSearch_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B418E0E38A981197ECC91CC8B98A4A /* YHSearchSuggestionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YHSearchSuggestionViewController.h; path = YHSearch/Classes/YHSearch/YHSearchSuggestionViewController.h; sourceTree = "<group>"; };
+		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		3303C97FA0FB0352060CA1F58E778E3D /* YHSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YHSearch.debug.xcconfig; sourceTree = "<group>"; };
+		342F22C18295C2647628D81E17A04460 /* YHSearchConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YHSearchConst.m; sourceTree = "<group>"; };
+		34E40CDB82761B3EC714371D40D542DE /* YHSearch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YHSearch.modulemap; sourceTree = "<group>"; };
 		351B469F82A69464763DA9A8A556D5E4 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
-		351F58B4D9722C92C9E881C25DBE9BEC /* YHSearch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YHSearch-umbrella.h"; sourceTree = "<group>"; };
 		3538C14800BA6D283B6500C766E4F0D3 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		35A5E3DFA630BE605E987F6A99FA446F /* Pods-YHSearch_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YHSearch_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		41CB974288A2892A90F9702F03E0697C /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		41D4D0B1EFAF3CFA7C471C010F63163F /* Pods_YHSearch_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHSearch_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41FBF6FEFEE3DCA6505A8BA93906EFBE /* YHSearchConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YHSearchConst.h; sourceTree = "<group>"; };
+		41D4D0B1EFAF3CFA7C471C010F63163F /* Pods-YHSearch_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-YHSearch_Tests"; path = Pods_YHSearch_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43FD0500F155110FC81738ABCFD8722E /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
-		45475C48B7AD1FB29962AEEC2744D702 /* YHSearch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YHSearch.modulemap; sourceTree = "<group>"; };
-		495C50CE6F9D04094F017D20302227DA /* YHSearchTagConfigure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YHSearchTagConfigure.h; sourceTree = "<group>"; };
 		498E8B0053FC9C12650256AC7795C1C6 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		4D539A2C33FB79DAADA1DB07F5881077 /* Pods-YHSearch_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YHSearch_Example.modulemap"; sourceTree = "<group>"; };
 		51578A1CEE9E9D26C7DF19EE8277B170 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
 		5163BD81BB134D2D9474F954E860E066 /* Pods-YHSearch_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YHSearch_Tests-dummy.m"; sourceTree = "<group>"; };
+		523621257D4540AA061CCA1C59476E3D /* YHSearchSuggestionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YHSearchSuggestionViewController.m; path = YHSearch/Classes/YHSearch/YHSearchSuggestionViewController.m; sourceTree = "<group>"; };
 		56F8E501CE8160049FD22610CD1E4BCE /* Pods-YHSearch_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YHSearch_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		571D18C2E4315CA0EE50281AEB95D9C8 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5887C4BB0C503304FFB0A96B52E1D5FC /* Pods-YHSearch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YHSearch_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D487755E7D0F85493EF03FEEB57A4FA /* search@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "search@2x.png"; path = "YHSearch/Assets/search@2x.png"; sourceTree = "<group>"; };
+		5D2D27A93566D73ED9C31981067344EF /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = YHSearch/Assets/en.lproj; sourceTree = "<group>"; };
 		602E46B1DC438E157FEFDB89FFC1FEE0 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		619B00416A212E714DCB514C71A854E1 /* YHSearchViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YHSearchViewController.m; path = YHSearch/Classes/YHSearch/YHSearchViewController.m; sourceTree = "<group>"; };
+		604935B2F642DBB48799FED5D5290305 /* YHSearchConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YHSearchConst.h; sourceTree = "<group>"; };
 		636796616D38EB5C7185BD684C7AE48B /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		643BAC9DBAE239E5CA901C3EDD5D97FB /* Pods-YHSearch_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YHSearch_Example-dummy.m"; sourceTree = "<group>"; };
 		65BA8B7B735B6722784321FF745BAE60 /* Pods-YHSearch_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YHSearch_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		66BA6286FFDDBFEF509A327789F6D690 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
 		67380272F2DF7819A336DF552AD92896 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		67C130B497B965E2C685D19A93AB97B2 /* Pods-YHSearch_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YHSearch_Tests-umbrella.h"; sourceTree = "<group>"; };
-		6B0DA6CE615E4F352A6CFCBD05A46D5E /* NSBundle+YHSearchExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YHSearchExtension.m"; sourceTree = "<group>"; };
-		6FAE4AAFEAB8DEC40919030C14DF5900 /* hot@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "hot@3x.png"; path = "YHSearch/Assets/hot@3x.png"; sourceTree = "<group>"; };
-		732A7BC7018F957E3B141434DB4A6F35 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		688FF39F03B21580951353EEDA750701 /* YHSearchNavigationBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YHSearchNavigationBarView.m; sourceTree = "<group>"; };
+		69D809CD2EB2FAE4A25F3D35E49B4019 /* YHSearch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YHSearch-dummy.m"; sourceTree = "<group>"; };
+		6A41F6CB964CAC030C3BF4EFEEC228B4 /* YHSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YHSearch.h; path = YHSearch/Classes/YHSearch/YHSearch.h; sourceTree = "<group>"; };
 		73DA2B3A3C8E6F3A7D976D1C4C4BCEC9 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		7419775CB4A240BD0371098D98303F9E /* YHSearch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = YHSearch.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		747AAE26701396E124E195A45732A025 /* UIView+YHSearchExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+YHSearchExtension.h"; sourceTree = "<group>"; };
 		75B839A35A2BFBEC3479FF1552F569BC /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		7677908E4731A350BFB5133719434758 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "YHSearch/Assets/zh-Hans.lproj"; sourceTree = "<group>"; };
 		7731683F4BFFF04ACBB3E9BA86F1B2BA /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
-		7DFACA8B3DBD4C32C3372337456CFB2F /* UIColor+YHSearchExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+YHSearchExtension.h"; sourceTree = "<group>"; };
 		7E502E95D75F8DF19C71E7419515430D /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
-		7EE803E9DAECDD9A901D06180470CF53 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		823AE4B4979D09F91ADB18679CF355CD /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
-		835D045AB14545352319F1AB0272BE36 /* empty@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "empty@3x.png"; path = "YHSearch/Assets/empty@3x.png"; sourceTree = "<group>"; };
 		85F7E92AFB26C1573053EAF3369AC74F /* Pods-YHSearch_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YHSearch_Example-frameworks.sh"; sourceTree = "<group>"; };
-		875E144FB09FA6EE16387A3E1609FBEB /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "YHSearch/Assets/zh-Hans.lproj"; sourceTree = "<group>"; };
 		8940D361FD89F610F4C862B772A33E51 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		8BF1BA429CD81D56C5BBBB368D0A044E /* Pods-YHSearch_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YHSearch_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8E38282865DF2BEEB33D0D0B44E384A7 /* YHSearchConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YHSearchConst.m; sourceTree = "<group>"; };
+		8E991BED5217C77FFAEF19D14C07959D /* NSBundle+YHSearchExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YHSearchExtension.h"; sourceTree = "<group>"; };
 		9016A8DDB9A4258DCC8B1B3DDECA0207 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		909597D5A7270BB0B845363BD757AC74 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		94A691C70504B82F1D79E0F50DF6B488 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		97B5913FFF3F444BFA4AEFDEA66B6DD1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		98E5B4DDA3A6742DA86BC33EDEB35F59 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		9A0263D5B40F7DF3C52FB661FE64926A /* YHBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YHBaseViewController.h; sourceTree = "<group>"; };
-		9B2EAA8A754FC1E0CC3EBAB75BDC8251 /* YHSearchTagConfigure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YHSearchTagConfigure.m; sourceTree = "<group>"; };
+		9B72EA96DDE54861359F0E8E6AA9BAC8 /* YHSearchTagConfigure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YHSearchTagConfigure.h; sourceTree = "<group>"; };
 		9D59B3C0F32A810274992E4FE92202D5 /* Pods-YHSearch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YHSearch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A394C2C6ABAE5BF5090CF2AD98C696AF /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		A4A12C368749FD2EEF1BB8849594446F /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		A4A857A392D39FE4CFAB1BD081470BC2 /* YHBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YHBaseViewController.m; sourceTree = "<group>"; };
 		A5ADEF2C33BF1C36E1F6020EA61D65B7 /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
-		A8B8B000C9AB85FB583D011F8299D51C /* YHSearchNavigationBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YHSearchNavigationBarView.h; sourceTree = "<group>"; };
-		A9AC3D0926A4B6758E552A67DF849BBF /* YHSearchNavigationBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YHSearchNavigationBarView.m; sourceTree = "<group>"; };
-		B0144224828A8928643CF7F268600003 /* YHSearch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YHSearch-Info.plist"; sourceTree = "<group>"; };
+		A6792C32CA8F5D7BAE90E4BE9F694EEA /* YHSearchViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YHSearchViewController.h; path = YHSearch/Classes/YHSearch/YHSearchViewController.h; sourceTree = "<group>"; };
+		A9405538B4B9318D3D24560CBFA20DD0 /* UIView+YHSearchExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+YHSearchExtension.m"; sourceTree = "<group>"; };
+		AE685847095BBC7DEF9A13E276F61121 /* YHSearch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YHSearch-umbrella.h"; sourceTree = "<group>"; };
+		AF4BE345629675A68BC253E0404BECA9 /* ResourceBundle-YHSearch-YHSearch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-YHSearch-YHSearch-Info.plist"; sourceTree = "<group>"; };
 		B17D6A5548097996EE3796656A32B6D2 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		B32DC82B087A3199F46DEE37F30C42D4 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		B366E8E3B2A74126C85605F4E724A30E /* UIColor+YHSearchExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YHSearchExtension.m"; sourceTree = "<group>"; };
 		B367BF20EC952AD50F06D3171735002D /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		B4EF667670B11768F7119A542E52A5FF /* Pods-YHSearch_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YHSearch_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B5751998ED4D98BFB76B639407774A4A /* Pods-YHSearch_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YHSearch_Tests.modulemap"; sourceTree = "<group>"; };
 		B5B1E2F803DFFCED6F569C9B29D0F433 /* Pods-YHSearch_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YHSearch_Tests-Info.plist"; sourceTree = "<group>"; };
-		BBC140E72593316B00606406 /* YHSearchSuggestionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YHSearchSuggestionViewController.h; path = YHSearch/Classes/YHSearch/YHSearchSuggestionViewController.h; sourceTree = "<group>"; };
-		BBC140E82593316B00606406 /* YHSearchSuggestionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YHSearchSuggestionViewController.m; path = YHSearch/Classes/YHSearch/YHSearchSuggestionViewController.m; sourceTree = "<group>"; };
+		BC2702379FC80B941E1E6601277AEF5F /* YHSearchViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YHSearchViewController.m; path = YHSearch/Classes/YHSearch/YHSearchViewController.m; sourceTree = "<group>"; };
 		BF110DE70107316228863B82A51A09D3 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		C2CCA1EEEF564C9B552BDE95B6973784 /* search@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "search@3x.png"; path = "YHSearch/Assets/search@3x.png"; sourceTree = "<group>"; };
 		C43B4427803F45E5EE12A79C135ABCEE /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		C668AA72D23D2B61578416E08C3F0480 /* UIColor+YHSearchExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YHSearchExtension.m"; sourceTree = "<group>"; };
-		C6E29DB59344ECAFC7B1A35AF3539767 /* YHSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YHSearch.h; path = YHSearch/Classes/YHSearch/YHSearch.h; sourceTree = "<group>"; };
-		C9793CB790939D78D330482E1D7A90C9 /* UIView+YHSearchExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+YHSearchExtension.m"; sourceTree = "<group>"; };
+		C74341F859A346B0C3AA20A9B487F2A1 /* search@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "search@3x.png"; path = "YHSearch/Assets/search@3x.png"; sourceTree = "<group>"; };
+		C9426474C074A8CF0A8AA58308954E16 /* empty@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "empty@2x.png"; path = "YHSearch/Assets/empty@2x.png"; sourceTree = "<group>"; };
+		CB6E3F687A07E5134AC9142205518236 /* UIColor+YHSearchExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+YHSearchExtension.h"; sourceTree = "<group>"; };
 		CBC25DC35E1D628DF55C296CE7732682 /* Pods-YHSearch_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YHSearch_Example-Info.plist"; sourceTree = "<group>"; };
-		CD8414A4C1EBCC90B1362145718BE648 /* NSBundle+YHSearchExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YHSearchExtension.h"; sourceTree = "<group>"; };
+		D1A99CC92340D0776453550BD87EBC8A /* YHSearch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YHSearch-prefix.pch"; sourceTree = "<group>"; };
 		D39570D3C32595968B12039E56A71CC2 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		D76C50858110DE0902C171F031B7C452 /* YHSearchHotWordsModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YHSearchHotWordsModel.h; sourceTree = "<group>"; };
+		D8979E0BE22FD53BF97EE07D6DE842BD /* YHSearchTagConfigure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YHSearchTagConfigure.m; sourceTree = "<group>"; };
 		D8AD9A6CFD4331B9A23C2F7983498CF3 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		D9A282C53A123426D0DC6CB96D76A6B7 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		DA48B7947D5AC0DDE52563C2DC8A5E3D /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		DACF1F44D13644E803BFCD4B9BF02ADB /* YHSearchNavigationBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YHSearchNavigationBarView.h; sourceTree = "<group>"; };
+		DBC1C31D8CA9ECF7BFB6C518A2BBA130 /* YHSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YHSearch.release.xcconfig; sourceTree = "<group>"; };
 		DC7C362325DB688A8F95677E534F634A /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
 		DFE72805626641332E27A0EE2C6EF88B /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		E1664911F55968A776BA11F00D8E434D /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		E20173728E322CA943398A88168AD012 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		E3D585D77B0AAEF524190789BFC78957 /* hot@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "hot@2x.png"; path = "YHSearch/Assets/hot@2x.png"; sourceTree = "<group>"; };
-		E44F67F90B71FC58D3922D59C05A582A /* ResourceBundle-YHSearch-YHSearch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-YHSearch-YHSearch-Info.plist"; sourceTree = "<group>"; };
-		E69EA050AA9F8FAB5C0A5037774B6FE9 /* empty@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "empty@2x.png"; path = "YHSearch/Assets/empty@2x.png"; sourceTree = "<group>"; };
-		E7425369443799F463CE42327A2B2316 /* YHSearch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YHSearch-prefix.pch"; sourceTree = "<group>"; };
+		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EC2AC2419ADE71E37B5FED7AEA50944A /* search@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "search@2x.png"; path = "YHSearch/Assets/search@2x.png"; sourceTree = "<group>"; };
 		EDFA8CC2AD68834644662EE1AC469B03 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
 		EEDB689E79C53F273A2573C066221B95 /* Pods-YHSearch_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YHSearch_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F0E3E54349F0051FE4FECA273F387927 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F31B44EB16F15F99AC8781ADF4497784 /* YHSearch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = YHSearch.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F56D9FAFFF2818921ADDC5FCE1FB7C92 /* Pods-YHSearch_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YHSearch_Example-umbrella.h"; sourceTree = "<group>"; };
+		F6903C09D8F87A26BB77AEC62C7BE5F9 /* delete@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "delete@2x.png"; path = "YHSearch/Assets/delete@2x.png"; sourceTree = "<group>"; };
 		F793D8588CD60BFFC82AF37C9BC308D0 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		F7FBD06C7654DAF6932980BD8F3D2368 /* YHSearch.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHSearch.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		F90537C71A6B0A5CEC45F949FC1D72B1 /* YHBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YHBaseViewController.m; sourceTree = "<group>"; };
-		FB615B3EF3D4ADCD81DF519D67793926 /* YHSearchViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YHSearchViewController.h; path = YHSearch/Classes/YHSearch/YHSearchViewController.h; sourceTree = "<group>"; };
+		F7FBD06C7654DAF6932980BD8F3D2368 /* YHSearch-YHSearch */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "YHSearch-YHSearch"; path = YHSearch.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE1DDE1A00CE0531A4DF74A6C2EB5F8 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1D8098DC3D357E9903ED348A0B40549A /* Frameworks */ = {
+		11EBCC39EC280BE141A3C204D8A51FEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E03FEF9F045E4C8A40E14749662F3B4A /* Foundation.framework in Frameworks */,
+				AC708CCF2093EFD66D172F66A476AB63 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		217F77C1F45EB1F2E825EF4FCEFC6C07 /* Frameworks */ = {
+		1FD9B20450DD42C79BAA315CAA9C011D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57A4C3236CA2B16580E1C99C3A81F9F /* Foundation.framework in Frameworks */,
-				C29063078660E1E12D049F8DB15B4AC2 /* Masonry.framework in Frameworks */,
+				6A8908B0189F7350E767023CAA281F8D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36BAD59A669B2B6DFF3746F06DF95FA6 /* Frameworks */ = {
+		90FC38723077CC85D24E74C1DF29E283 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AD30C145B0299AF0D76FA258332D9C6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E047F76604659BF1B2099B2C412AC93 /* Frameworks */ = {
+		B3FCF39B893BB551DE088349C2B7BB80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58AF805046CFD9986EFEAACCBA61F9BE /* Foundation.framework in Frameworks */,
-				5D5AB502D85BF8E27246A5964F6B3E9F /* UIKit.framework in Frameworks */,
+				3BFAC66E64756EBC1C8C06135067C6DA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E581515110D66F94F80A6937831489A1 /* Frameworks */ = {
+		CCB6E60691DB58C9D2C0F26733F25C2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */,
-				2E4C0BD2363ABABB6470FBA5415985AA /* QuartzCore.framework in Frameworks */,
-				BD4953074A12E769ED4E6C94F5E73694 /* UIKit.framework in Frameworks */,
-				121439AB6B4061E1B6222256817548FA /* XCTest.framework in Frameworks */,
+				78251F42EB680FB72F040A1986279CD2 /* Foundation.framework in Frameworks */,
+				8171D105E2C5CD3C1357D544942B4446 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0B3A8014BCC55C60DA5FF0F4483E158 /* Frameworks */ = {
+		E3B880388FF17A336FBF90E30E537508 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */,
+				C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */,
+				875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */,
+				9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0ECC8C56048666CB18CC4A4E6DE12C76 /* Extension */ = {
+		24A08EEC3E7A02187497305CA889F6BE /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				CD8414A4C1EBCC90B1362145718BE648 /* NSBundle+YHSearchExtension.h */,
-				6B0DA6CE615E4F352A6CFCBD05A46D5E /* NSBundle+YHSearchExtension.m */,
-				7DFACA8B3DBD4C32C3372337456CFB2F /* UIColor+YHSearchExtension.h */,
-				C668AA72D23D2B61578416E08C3F0480 /* UIColor+YHSearchExtension.m */,
-				2D96A8ED8F2A5A91BF708CE74D78596A /* UIView+YHSearchExtension.h */,
-				C9793CB790939D78D330482E1D7A90C9 /* UIView+YHSearchExtension.m */,
+				275201269B31CA1291CA65790C8074AF /* YHBaseViewController.h */,
+				A4A857A392D39FE4CFAB1BD081470BC2 /* YHBaseViewController.m */,
+				DACF1F44D13644E803BFCD4B9BF02ADB /* YHSearchNavigationBarView.h */,
+				688FF39F03B21580951353EEDA750701 /* YHSearchNavigationBarView.m */,
 			);
-			name = Extension;
-			path = YHSearch/Classes/YHSearch/Extension;
-			sourceTree = "<group>";
-		};
-		1B72EC6AB9ADA169165B6030E1615AEA /* Configure */ = {
-			isa = PBXGroup;
-			children = (
-				41FBF6FEFEE3DCA6505A8BA93906EFBE /* YHSearchConst.h */,
-				8E38282865DF2BEEB33D0D0B44E384A7 /* YHSearchConst.m */,
-				495C50CE6F9D04094F017D20302227DA /* YHSearchTagConfigure.h */,
-				9B2EAA8A754FC1E0CC3EBAB75BDC8251 /* YHSearchTagConfigure.m */,
-			);
-			name = Configure;
-			path = YHSearch/Classes/YHSearch/Configure;
+			name = Base;
+			path = YHSearch/Classes/YHSearch/Base;
 			sourceTree = "<group>";
 		};
 		2F1DC79F1ECA9A14267BB11D984EE1B1 /* Support Files */ = {
@@ -377,15 +356,16 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3C9BFAFE11865809B1661F23CA2AE70E /* iOS */ = {
+		3B1228E4C1DF362892CF012D439D0E51 /* Configure */ = {
 			isa = PBXGroup;
 			children = (
-				F0E3E54349F0051FE4FECA273F387927 /* Foundation.framework */,
-				18056459E0FCB26B89B6DB59A4B7F083 /* QuartzCore.framework */,
-				289CFCDFEED23B9E649A5FD89EBB2429 /* UIKit.framework */,
-				21CFB9B3D4F21626ACCEEDD451DCE930 /* XCTest.framework */,
+				604935B2F642DBB48799FED5D5290305 /* YHSearchConst.h */,
+				342F22C18295C2647628D81E17A04460 /* YHSearchConst.m */,
+				9B72EA96DDE54861359F0E8E6AA9BAC8 /* YHSearchTagConfigure.h */,
+				D8979E0BE22FD53BF97EE07D6DE842BD /* YHSearchTagConfigure.m */,
 			);
-			name = iOS;
+			name = Configure;
+			path = YHSearch/Classes/YHSearch/Configure;
 			sourceTree = "<group>";
 		};
 		4A62A50A353010EE22AD4E07C3F1E2CC /* Pods */ = {
@@ -395,6 +375,14 @@
 				C9E771689945C3042D078AF43B415DCC /* Masonry */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6500BE678A895A9625B8A6CF14FAA3FA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C047A5DD7D174F64C096398CABFF76C1 /* YHSearch */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		717370984CC95901120CD02EACC41D72 /* SwiftSupport */ = {
@@ -437,35 +425,17 @@
 			path = "Target Support Files/Pods-YHSearch_Tests";
 			sourceTree = "<group>";
 		};
-		8E0AE602EAB9446DE8A07F544ECCED9A /* Products */ = {
+		B5CDF1BA39E4841691F3769090B7EE0D /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
 				1FFED36A657123030ABB700256D73F15 /* Masonry.framework */,
-				306ABF75753D9EBBD1A77202E6E3F740 /* Pods_YHSearch_Example.framework */,
-				41D4D0B1EFAF3CFA7C471C010F63163F /* Pods_YHSearch_Tests.framework */,
-				F7FBD06C7654DAF6932980BD8F3D2368 /* YHSearch.bundle */,
-				0D72A916789B79AB69762C3622931BE3 /* YHSearch.framework */,
+				306ABF75753D9EBBD1A77202E6E3F740 /* Pods-YHSearch_Example */,
+				41D4D0B1EFAF3CFA7C471C010F63163F /* Pods-YHSearch_Tests */,
+				0D72A916789B79AB69762C3622931BE3 /* YHSearch */,
+				F7FBD06C7654DAF6932980BD8F3D2368 /* YHSearch-YHSearch */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A6D90389C58C33641C8D1C77CD8D9859 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D76C50858110DE0902C171F031B7C452 /* YHSearchHotWordsModel.h */,
-				1CF5571DDCAFFDF4C6DA7EB142CCD073 /* YHSearchHotWordsModel.m */,
-			);
-			name = Model;
-			path = YHSearch/Classes/YHSearch/Model;
-			sourceTree = "<group>";
-		};
-		AE5983AE48D6016226D141CDFA581F4F /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EC7C065F5E09B764B74F136306319D1C /* YHSearch */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		B658CE446B469A6CB1DD01F837BFE848 /* FBSnapshotTestCase */ = {
@@ -476,6 +446,40 @@
 				717370984CC95901120CD02EACC41D72 /* SwiftSupport */,
 			);
 			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB2668559AE577E6E8078C0C291AD417 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C047A5DD7D174F64C096398CABFF76C1 /* YHSearch */ = {
+			isa = PBXGroup;
+			children = (
+				F6903C09D8F87A26BB77AEC62C7BE5F9 /* delete@2x.png */,
+				230E1752FCDDC1355D1BA9AF643179B7 /* delete@3x.png */,
+				C9426474C074A8CF0A8AA58308954E16 /* empty@2x.png */,
+				23F4B9B4C7E3724386CDFB0E8E6CB2A9 /* empty@3x.png */,
+				5D2D27A93566D73ED9C31981067344EF /* en.lproj */,
+				EC2AC2419ADE71E37B5FED7AEA50944A /* search@2x.png */,
+				C74341F859A346B0C3AA20A9B487F2A1 /* search@3x.png */,
+				6A41F6CB964CAC030C3BF4EFEEC228B4 /* YHSearch.h */,
+				30B418E0E38A981197ECC91CC8B98A4A /* YHSearchSuggestionViewController.h */,
+				523621257D4540AA061CCA1C59476E3D /* YHSearchSuggestionViewController.m */,
+				A6792C32CA8F5D7BAE90E4BE9F694EEA /* YHSearchViewController.h */,
+				BC2702379FC80B941E1E6601277AEF5F /* YHSearchViewController.m */,
+				7677908E4731A350BFB5133719434758 /* zh-Hans.lproj */,
+				24A08EEC3E7A02187497305CA889F6BE /* Base */,
+				3B1228E4C1DF362892CF012D439D0E51 /* Configure */,
+				F1696CB6EFF9B5716F096D3391F85147 /* Extension */,
+				FED6782D0E3CDBD3580E2E10F53060B5 /* Pod */,
+				D0912E998B10BB279C9E3419F5737144 /* Support Files */,
+			);
+			name = YHSearch;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		C9E771689945C3042D078AF43B415DCC /* Masonry */ = {
@@ -515,59 +519,28 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				AE5983AE48D6016226D141CDFA581F4F /* Development Pods */,
-				E37236A997A0AFE3B3B04832A616C7CF /* Frameworks */,
+				6500BE678A895A9625B8A6CF14FAA3FA /* Development Pods */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
 				4A62A50A353010EE22AD4E07C3F1E2CC /* Pods */,
-				8E0AE602EAB9446DE8A07F544ECCED9A /* Products */,
+				B5CDF1BA39E4841691F3769090B7EE0D /* Products */,
 				32986D62CAF9B1EEBC8FF4B32E6CC7D6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D5BDFB83EBDAAEE6C456B06D8D140F6F /* Pod */ = {
+		D0912E998B10BB279C9E3419F5737144 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				732A7BC7018F957E3B141434DB4A6F35 /* LICENSE */,
-				7EE803E9DAECDD9A901D06180470CF53 /* README.md */,
-				7419775CB4A240BD0371098D98303F9E /* YHSearch.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		DA7D2515788BCEF6DF910CBFF717EA80 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				9A0263D5B40F7DF3C52FB661FE64926A /* YHBaseViewController.h */,
-				F90537C71A6B0A5CEC45F949FC1D72B1 /* YHBaseViewController.m */,
-				A8B8B000C9AB85FB583D011F8299D51C /* YHSearchNavigationBarView.h */,
-				A9AC3D0926A4B6758E552A67DF849BBF /* YHSearchNavigationBarView.m */,
-			);
-			name = Base;
-			path = YHSearch/Classes/YHSearch/Base;
-			sourceTree = "<group>";
-		};
-		E2C8F2368AF8E2EC42DB6DC39776B46A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E44F67F90B71FC58D3922D59C05A582A /* ResourceBundle-YHSearch-YHSearch-Info.plist */,
-				45475C48B7AD1FB29962AEEC2744D702 /* YHSearch.modulemap */,
-				1CA304BF3B90CA8488BA37F9951CFB13 /* YHSearch-dummy.m */,
-				B0144224828A8928643CF7F268600003 /* YHSearch-Info.plist */,
-				E7425369443799F463CE42327A2B2316 /* YHSearch-prefix.pch */,
-				351F58B4D9722C92C9E881C25DBE9BEC /* YHSearch-umbrella.h */,
-				00FFD0E5C1BE2279C48B5B801198861C /* YHSearch.debug.xcconfig */,
-				22573F36D6540281EBD2050275303943 /* YHSearch.release.xcconfig */,
+				AF4BE345629675A68BC253E0404BECA9 /* ResourceBundle-YHSearch-YHSearch-Info.plist */,
+				34E40CDB82761B3EC714371D40D542DE /* YHSearch.modulemap */,
+				69D809CD2EB2FAE4A25F3D35E49B4019 /* YHSearch-dummy.m */,
+				190C2EEAD8E46609EB2A5AAE8CC6BB40 /* YHSearch-Info.plist */,
+				D1A99CC92340D0776453550BD87EBC8A /* YHSearch-prefix.pch */,
+				AE685847095BBC7DEF9A13E276F61121 /* YHSearch-umbrella.h */,
+				3303C97FA0FB0352060CA1F58E778E3D /* YHSearch.debug.xcconfig */,
+				DBC1C31D8CA9ECF7BFB6C518A2BBA130 /* YHSearch.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/YHSearch";
-			sourceTree = "<group>";
-		};
-		E37236A997A0AFE3B3B04832A616C7CF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				571D18C2E4315CA0EE50281AEB95D9C8 /* Masonry.framework */,
-				3C9BFAFE11865809B1661F23CA2AE70E /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E883AA8287432236D9B24A5AD0EEA9A1 /* Pods-YHSearch_Example */ = {
@@ -587,31 +560,18 @@
 			path = "Target Support Files/Pods-YHSearch_Example";
 			sourceTree = "<group>";
 		};
-		EC7C065F5E09B764B74F136306319D1C /* YHSearch */ = {
+		F1696CB6EFF9B5716F096D3391F85147 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E69EA050AA9F8FAB5C0A5037774B6FE9 /* empty@2x.png */,
-				835D045AB14545352319F1AB0272BE36 /* empty@3x.png */,
-				0EC6ADF2AD560D6E72E86030F1C2EF79 /* en.lproj */,
-				E3D585D77B0AAEF524190789BFC78957 /* hot@2x.png */,
-				6FAE4AAFEAB8DEC40919030C14DF5900 /* hot@3x.png */,
-				5D487755E7D0F85493EF03FEEB57A4FA /* search@2x.png */,
-				C2CCA1EEEF564C9B552BDE95B6973784 /* search@3x.png */,
-				C6E29DB59344ECAFC7B1A35AF3539767 /* YHSearch.h */,
-				FB615B3EF3D4ADCD81DF519D67793926 /* YHSearchViewController.h */,
-				619B00416A212E714DCB514C71A854E1 /* YHSearchViewController.m */,
-				BBC140E72593316B00606406 /* YHSearchSuggestionViewController.h */,
-				BBC140E82593316B00606406 /* YHSearchSuggestionViewController.m */,
-				875E144FB09FA6EE16387A3E1609FBEB /* zh-Hans.lproj */,
-				DA7D2515788BCEF6DF910CBFF717EA80 /* Base */,
-				1B72EC6AB9ADA169165B6030E1615AEA /* Configure */,
-				0ECC8C56048666CB18CC4A4E6DE12C76 /* Extension */,
-				A6D90389C58C33641C8D1C77CD8D9859 /* Model */,
-				D5BDFB83EBDAAEE6C456B06D8D140F6F /* Pod */,
-				E2C8F2368AF8E2EC42DB6DC39776B46A /* Support Files */,
+				8E991BED5217C77FFAEF19D14C07959D /* NSBundle+YHSearchExtension.h */,
+				0213122F7588CA900B03618A69D0521E /* NSBundle+YHSearchExtension.m */,
+				CB6E3F687A07E5134AC9142205518236 /* UIColor+YHSearchExtension.h */,
+				B366E8E3B2A74126C85605F4E724A30E /* UIColor+YHSearchExtension.m */,
+				747AAE26701396E124E195A45732A025 /* UIView+YHSearchExtension.h */,
+				A9405538B4B9318D3D24560CBFA20DD0 /* UIView+YHSearchExtension.m */,
 			);
-			name = YHSearch;
-			path = ../..;
+			name = Extension;
+			path = YHSearch/Classes/YHSearch/Extension;
 			sourceTree = "<group>";
 		};
 		F4F09DBECA9DA51BA2AFE7F9FAF7779F /* Core */ = {
@@ -635,79 +595,99 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		FB2668559AE577E6E8078C0C291AD417 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */,
+				3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */,
+				1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */,
+				E658F388F01C72599CA75537950B6095 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FED6782D0E3CDBD3580E2E10F53060B5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				97B5913FFF3F444BFA4AEFDEA66B6DD1 /* LICENSE */,
+				046C2CC886A5E5C441448F6E24DAC514 /* README.md */,
+				F31B44EB16F15F99AC8781ADF4497784 /* YHSearch.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		384DE8A8021C5DA5E256BCFEC3D478A9 /* Headers */ = {
+		1B64C8369CA2869466AE9063973E7AD8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */,
-				00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */,
-				C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */,
-				90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */,
-				40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */,
-				F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */,
-				D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */,
-				B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */,
+				0E5D3654FCBC54BAD0FB7D4ABDDCD674 /* Pods-YHSearch_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B04ACBA4522760CA66A5D4AFA498F81 /* Headers */ = {
+		47AA1DECE073DF07950AE330F5154F02 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D65CE579E516BDD5FB36CAA21D693F6 /* MASCompositeConstraint.h in Headers */,
-				9D546E1168C04B0B2EAE005D9275D18B /* MASConstraint+Private.h in Headers */,
-				941955A19C40899D275604E6E9C21A6D /* MASConstraint.h in Headers */,
-				FAFBFA90F7BC3E7CF50F8A5CF0A8B264 /* MASConstraintMaker.h in Headers */,
-				8D4D1F6E4709EBB13974E95DC1059DDC /* MASLayoutConstraint.h in Headers */,
-				6A6AD3A5BBDBFD0B4AF936BD518EC0B1 /* Masonry-umbrella.h in Headers */,
-				346080C0D1CA23399ADD739D722D7CEF /* Masonry.h in Headers */,
-				280D36330BAC5715615FF4A8B42D60D6 /* MASUtilities.h in Headers */,
-				3DA5F1D8E51CDD102A871C2F37770C7B /* MASViewAttribute.h in Headers */,
-				EAE8B0895956885A752B173683A0D889 /* MASViewConstraint.h in Headers */,
-				05EA1447EEA0EB669F8DEE73964A7C60 /* NSArray+MASAdditions.h in Headers */,
-				05A040F35BF1C88F869404E1A940B493 /* NSArray+MASShorthandAdditions.h in Headers */,
-				0AF1AD35706D90B1A91F291B899EF8C0 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
-				4B0981F9AC628CF5100C50FF4A163A4A /* View+MASAdditions.h in Headers */,
-				E7CA20228B3583F41927813EE904CAD3 /* View+MASShorthandAdditions.h in Headers */,
-				8B92011C9373001132C8148BFC8F50B3 /* ViewController+MASAdditions.h in Headers */,
+				DCD317350A38BDC7F25607C61D78FCDD /* NSBundle+YHSearchExtension.h in Headers */,
+				229D9F18EBB3F82184EF61339AEDB017 /* UIColor+YHSearchExtension.h in Headers */,
+				7B42B74CA42D6AE7F7ED3EB1D1B5E012 /* UIView+YHSearchExtension.h in Headers */,
+				B943EF1FB74845F8D77DED0185E144C9 /* YHBaseViewController.h in Headers */,
+				835AE351871EE881E9C57EC2E33BD54B /* YHSearch.h in Headers */,
+				E0D21033DBA416CEBC098BC6DFCE228D /* YHSearch-umbrella.h in Headers */,
+				CF935D20452EACBE56CBA31F5CA36EE6 /* YHSearchConst.h in Headers */,
+				C2F2FFEB7A03BFB59B6F2D61D18C11E7 /* YHSearchNavigationBarView.h in Headers */,
+				4783805DF405E6624F098ABE48CC0533 /* YHSearchSuggestionViewController.h in Headers */,
+				3BE930DA88488FE48B7150F8437EAD4B /* YHSearchTagConfigure.h in Headers */,
+				D955B779176618CF4EF64F5F2A666BA2 /* YHSearchViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A72A93465E6D9F3A2C68F728599B951 /* Headers */ = {
+		6AF77B08196C2FBE5F6624E36EACAAD4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0347067AF1C246A7C1EF8F404A20BDC /* NSBundle+YHSearchExtension.h in Headers */,
-				A81F669587771B3EC047EF11647F5C2A /* UIColor+YHSearchExtension.h in Headers */,
-				BBC140F1259331D300606406 /* YHSearchSuggestionViewController.h in Headers */,
-				84C54E21C450ADDD5613E2ED4D286031 /* UIView+YHSearchExtension.h in Headers */,
-				39A85CB8626484919FA784A041214139 /* YHBaseViewController.h in Headers */,
-				91569118113FF0E4D2D79AE26835B3FB /* YHSearch-umbrella.h in Headers */,
-				0684FC0C28B57A6CE9E3F201B6CE0877 /* YHSearch.h in Headers */,
-				AED91BCB4FDE8FF04DD3B04241FEB3F3 /* YHSearchConst.h in Headers */,
-				8E4A3699E247454A185A54CB6A2C5430 /* YHSearchHotWordsModel.h in Headers */,
-				FA72CAB2E485FA1A2A8F6EC0F4A6AE8A /* YHSearchNavigationBarView.h in Headers */,
-				79DCAA485FE0D5A935A00320CA1BECD5 /* YHSearchTagConfigure.h in Headers */,
-				D64BF60A30B6092169D47DBB012DFA2D /* YHSearchViewController.h in Headers */,
+				7569A4D258B2138AC473600111C22421 /* Pods-YHSearch_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF643FAC0EFCA50C8FA21D86C7A1EA0E /* Headers */ = {
+		99A8659D86DFD4C224D177332D003EDC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA50F6804455DDAA87A9A02E19746542 /* Pods-YHSearch_Tests-umbrella.h in Headers */,
+				B4BE7728D87333785F811FED48CF134E /* MASCompositeConstraint.h in Headers */,
+				BEA99A49E5F8DA685E33DABA606041FF /* MASConstraint.h in Headers */,
+				A83A6757F6C0003332D57B41FE24BEEA /* MASConstraint+Private.h in Headers */,
+				1B433A1BF92BBD5811F61A000E4771C2 /* MASConstraintMaker.h in Headers */,
+				2839E3707C14798138E8A0C72ACE4C25 /* MASLayoutConstraint.h in Headers */,
+				31F7C35C8863FA25A741A884E21BE7D0 /* Masonry.h in Headers */,
+				B61AA5459C2B345AD6D84D8A5111C9CE /* Masonry-umbrella.h in Headers */,
+				0E8CCAE597756C61B2D7B60EEF4A29E4 /* MASUtilities.h in Headers */,
+				715AB2C777F6FCAB5EE0C667A909B698 /* MASViewAttribute.h in Headers */,
+				CEE7BDCC3F3073CBBF7A76BC6CF3E519 /* MASViewConstraint.h in Headers */,
+				8AE868BC3E2E6FC92F4717835180C47D /* NSArray+MASAdditions.h in Headers */,
+				E53FCD0CD1526B53074ED4EEF00131E9 /* NSArray+MASShorthandAdditions.h in Headers */,
+				BE050DABC9BF806B3379AFD2367F4194 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				3D0EFFE30E3193932A034220E3C4C0FA /* View+MASAdditions.h in Headers */,
+				61225B0B9AEC591476E30C9A575013B3 /* View+MASShorthandAdditions.h in Headers */,
+				B10646B6AF73D470221EF25A5DEEEB6F /* ViewController+MASAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3BED9F58749021D3AA5F3794675FB03 /* Headers */ = {
+		D4CF7A53AFE8275DDE075747E8245F97 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EABEC95287939DFFE37143AE87FF263D /* Pods-YHSearch_Example-umbrella.h in Headers */,
+				FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */,
+				1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */,
+				640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */,
+				2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */,
+				5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */,
+				8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */,
+				67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */,
+				373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,12 +696,12 @@
 /* Begin PBXNativeTarget section */
 		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87FD40BD683E3BD044AA4D1B5CA58652 /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildConfigurationList = 104EC9250BF4EDE104280490293C13C3 /* Build configuration list for PBXNativeTarget "Masonry" */;
 			buildPhases = (
-				7B04ACBA4522760CA66A5D4AFA498F81 /* Headers */,
-				038B428AD06C5A47FAF2BEFE16C6DC16 /* Sources */,
-				5E047F76604659BF1B2099B2C412AC93 /* Frameworks */,
-				895ED1B8779C1D82DF681CBFF67AC570 /* Resources */,
+				99A8659D86DFD4C224D177332D003EDC /* Headers */,
+				3003736003A11F9793D9EA6DC169AED7 /* Sources */,
+				CCB6E60691DB58C9D2C0F26733F25C2E /* Frameworks */,
+				4522D50300D635138BEDBF5E60D39B53 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -734,32 +714,32 @@
 		};
 		8BFFF6547B0216DCE09DC633829DB44E /* YHSearch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CFF77EFA9BB44488D4D5E8230B9B71AF /* Build configuration list for PBXNativeTarget "YHSearch" */;
+			buildConfigurationList = 6F14CF2A6036B3884874B883B2040F7F /* Build configuration list for PBXNativeTarget "YHSearch" */;
 			buildPhases = (
-				8A72A93465E6D9F3A2C68F728599B951 /* Headers */,
-				09A97F71852321CDA481C6D343C27790 /* Sources */,
-				217F77C1F45EB1F2E825EF4FCEFC6C07 /* Frameworks */,
-				D228355B502EDBFCED8607E69A37C155 /* Resources */,
+				47AA1DECE073DF07950AE330F5154F02 /* Headers */,
+				B32FA49CDC27B71D05DA707D3E20EB67 /* Sources */,
+				B3FCF39B893BB551DE088349C2B7BB80 /* Frameworks */,
+				200FC23615FE8D39E511D73C56CC4025 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D4DF40ACF9FDB32A8233709E2FE904D9 /* PBXTargetDependency */,
-				6E1B78DE22BE92F190F63AAC95FB2F21 /* PBXTargetDependency */,
+				8B1C71D8B0D2E7D1FB364B1EA97F100D /* PBXTargetDependency */,
+				919172A94677FA1BBF8BED64599C86C8 /* PBXTargetDependency */,
 			);
 			name = YHSearch;
 			productName = YHSearch;
-			productReference = 0D72A916789B79AB69762C3622931BE3 /* YHSearch.framework */;
+			productReference = 0D72A916789B79AB69762C3622931BE3 /* YHSearch */;
 			productType = "com.apple.product-type.framework";
 		};
 		98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A38070E189561F257BBD5A0A55CACCCF /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
+			buildConfigurationList = 28DAA9880679133EC375B7072B9AEABB /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
 			buildPhases = (
-				384DE8A8021C5DA5E256BCFEC3D478A9 /* Headers */,
-				A48201AC594B2E6B09C0EE0396BC1377 /* Sources */,
-				E581515110D66F94F80A6937831489A1 /* Frameworks */,
-				5CC655F1A6C7A45A9693160581076BAE /* Resources */,
+				D4CF7A53AFE8275DDE075747E8245F97 /* Headers */,
+				EE210BFC37CDBA0645C09C3819F41723 /* Sources */,
+				E3B880388FF17A336FBF90E30E537508 /* Frameworks */,
+				194C9DCC4899F62F4FB7DDF15C987499 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -772,59 +752,59 @@
 		};
 		A220019C1D765FBEA880A16D61D91A4D /* Pods-YHSearch_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FEB09877855129D8482462BEAB4E0732 /* Build configuration list for PBXNativeTarget "Pods-YHSearch_Example" */;
+			buildConfigurationList = 6C1477A07D1366404E5BE7AF2A84DF8B /* Build configuration list for PBXNativeTarget "Pods-YHSearch_Example" */;
 			buildPhases = (
-				D3BED9F58749021D3AA5F3794675FB03 /* Headers */,
-				E462FC17EA438DF72C2351CD6C3A6610 /* Sources */,
-				36BAD59A669B2B6DFF3746F06DF95FA6 /* Frameworks */,
-				292AE3167D1269C3FDFD63BE0FA28C74 /* Resources */,
+				1B64C8369CA2869466AE9063973E7AD8 /* Headers */,
+				82697003560C12D7F85A40FD3DB55A26 /* Sources */,
+				11EBCC39EC280BE141A3C204D8A51FEB /* Frameworks */,
+				368DF5259C894471B59F579C6E6561A2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A7C63AE912CF9C286E4645C9AFA9794E /* PBXTargetDependency */,
-				77210C9CD2520B93372A6C5B16326C3D /* PBXTargetDependency */,
+				C6BDD312E2D83ADAC758EAF95A897E22 /* PBXTargetDependency */,
+				DDB708597A8B975360B0B347EC1F8524 /* PBXTargetDependency */,
 			);
 			name = "Pods-YHSearch_Example";
-			productName = "Pods-YHSearch_Example";
-			productReference = 306ABF75753D9EBBD1A77202E6E3F740 /* Pods_YHSearch_Example.framework */;
+			productName = Pods_YHSearch_Example;
+			productReference = 306ABF75753D9EBBD1A77202E6E3F740 /* Pods-YHSearch_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		DF38DB1A0E7FA95F25D9D1F92973E853 /* Pods-YHSearch_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8555806DC60830D3D7EED985C3C1A5EE /* Build configuration list for PBXNativeTarget "Pods-YHSearch_Tests" */;
+			buildConfigurationList = C56AE94FBA5A01E1C5FD13157CD117AC /* Build configuration list for PBXNativeTarget "Pods-YHSearch_Tests" */;
 			buildPhases = (
-				AF643FAC0EFCA50C8FA21D86C7A1EA0E /* Headers */,
-				30194BC63CF945409EFBD2010F1A66DF /* Sources */,
-				1D8098DC3D357E9903ED348A0B40549A /* Frameworks */,
-				93FF28A06FE13849ADEFBC3B6EC24AAD /* Resources */,
+				6AF77B08196C2FBE5F6624E36EACAAD4 /* Headers */,
+				FDD148E397FABBF1D41AFB2791C3573C /* Sources */,
+				1FD9B20450DD42C79BAA315CAA9C011D /* Frameworks */,
+				8984E936E096A9A5F3B82293FE1EC2FC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A52054C33BC3633FF5930BA6DCEDF45B /* PBXTargetDependency */,
-				81EAAA57BDAB58ACBE2810CB3F3297E6 /* PBXTargetDependency */,
+				57F64FAA3FA837F76AB742D577E457E4 /* PBXTargetDependency */,
+				821D65DFB9FE838D1877FB885056551F /* PBXTargetDependency */,
 			);
 			name = "Pods-YHSearch_Tests";
-			productName = "Pods-YHSearch_Tests";
-			productReference = 41D4D0B1EFAF3CFA7C471C010F63163F /* Pods_YHSearch_Tests.framework */;
+			productName = Pods_YHSearch_Tests;
+			productReference = 41D4D0B1EFAF3CFA7C471C010F63163F /* Pods-YHSearch_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 		F0A012D0CE763888330AA26AA2F8F9A8 /* YHSearch-YHSearch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85ADF3D9813DA2F6437526CE277710F1 /* Build configuration list for PBXNativeTarget "YHSearch-YHSearch" */;
+			buildConfigurationList = 942AB51CD899A8964DE0191A861417F8 /* Build configuration list for PBXNativeTarget "YHSearch-YHSearch" */;
 			buildPhases = (
-				FDCC68B04DD5BEF44B48500E52CAF202 /* Sources */,
-				F0B3A8014BCC55C60DA5FF0F4483E158 /* Frameworks */,
-				29EE79B050D539514D6CAA8934027B65 /* Resources */,
+				6A049258AC1592634E033ED4346B8336 /* Sources */,
+				90FC38723077CC85D24E74C1DF29E283 /* Frameworks */,
+				FEF663A5F90758785A2DE73BFA73C391 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "YHSearch-YHSearch";
-			productName = "YHSearch-YHSearch";
-			productReference = F7FBD06C7654DAF6932980BD8F3D2368 /* YHSearch.bundle */;
+			productName = YHSearch;
+			productReference = F7FBD06C7654DAF6932980BD8F3D2368 /* YHSearch-YHSearch */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -833,19 +813,26 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F0A012D0CE763888330AA26AA2F8F9A8 = {
+						DevelopmentTeam = 74MB64V8BE;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
+				"zh-Hans",
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 8E0AE602EAB9446DE8A07F544ECCED9A /* Products */;
+			productRefGroup = B5CDF1BA39E4841691F3769090B7EE0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -860,214 +847,183 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		292AE3167D1269C3FDFD63BE0FA28C74 /* Resources */ = {
+		194C9DCC4899F62F4FB7DDF15C987499 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29EE79B050D539514D6CAA8934027B65 /* Resources */ = {
+		200FC23615FE8D39E511D73C56CC4025 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4B28B865D69AE14ADC40EA8BD96CF59 /* empty@2x.png in Resources */,
-				97B1FB7E8D52A54333D5AF7E6F5CB969 /* empty@3x.png in Resources */,
-				54A8732B88F2882CB216E09043648836 /* en.lproj in Resources */,
-				CBA1839B77B49970308D1415C1648530 /* hot@2x.png in Resources */,
-				6BA64F8422531F0A01276DC1E80965E9 /* hot@3x.png in Resources */,
-				E0104CE0BC75239885E6E9F4D35C92FB /* search@2x.png in Resources */,
-				D4556E601BC94DFE96331B3336089FEF /* search@3x.png in Resources */,
-				85A569FCF07F94F9A8A3015DF9C112E6 /* zh-Hans.lproj in Resources */,
+				3F9F44D0F900B6E828CCD5B446E8DCC6 /* YHSearch-YHSearch in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CC655F1A6C7A45A9693160581076BAE /* Resources */ = {
+		368DF5259C894471B59F579C6E6561A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		895ED1B8779C1D82DF681CBFF67AC570 /* Resources */ = {
+		4522D50300D635138BEDBF5E60D39B53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93FF28A06FE13849ADEFBC3B6EC24AAD /* Resources */ = {
+		8984E936E096A9A5F3B82293FE1EC2FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D228355B502EDBFCED8607E69A37C155 /* Resources */ = {
+		FEF663A5F90758785A2DE73BFA73C391 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F1B6EFB371BD585C99120E2CD37B22 /* YHSearch.bundle in Resources */,
+				8646A919BFE36A8B745A4CA0C7EAF345 /* delete@2x.png in Resources */,
+				A6199C781771C153CEE5856430D487DE /* delete@3x.png in Resources */,
+				E220A7E8941F84087FD270D2BB2430E7 /* empty@2x.png in Resources */,
+				8A01D02C96392E646F7EFAD4C82CDC17 /* empty@3x.png in Resources */,
+				0B41BF4142707B7517C6FC153F9DDF3C /* en.lproj in Resources */,
+				EB06D99F6F966F8D86A05D475CC476CE /* search@2x.png in Resources */,
+				D3EE647B9C79CC23E969D116C2B34BC8 /* search@3x.png in Resources */,
+				AF5889EECB090178EA7F75F8BF2BD209 /* zh-Hans.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		038B428AD06C5A47FAF2BEFE16C6DC16 /* Sources */ = {
+		3003736003A11F9793D9EA6DC169AED7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BFF65958F014760B6AC4742824892EB /* MASCompositeConstraint.m in Sources */,
-				E8DD5D1D406150E1C80AD015271B6848 /* MASConstraint.m in Sources */,
-				78B2727EE5D693F58D019DB098005101 /* MASConstraintMaker.m in Sources */,
-				8539B851E01A58467BE49CA3FA77223C /* MASLayoutConstraint.m in Sources */,
-				1972E85F0FCD0F3EAF28ED7CD036286E /* Masonry-dummy.m in Sources */,
-				297A3627CF2F032CBFDC61D1A3786E63 /* MASViewAttribute.m in Sources */,
-				B7D645EC004610E8A581E532D28771EC /* MASViewConstraint.m in Sources */,
-				098630ECDB64ED7B89F5F687C82B4AC3 /* NSArray+MASAdditions.m in Sources */,
-				C0861ADB4C5FA30F4F9E051F7638A264 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				A35FBEEC7D088AEC05297E8292A32C77 /* View+MASAdditions.m in Sources */,
-				0967598607D521318F69D7D39D517B20 /* ViewController+MASAdditions.m in Sources */,
+				19300CF68F5718C6F9C3476F1A98C1DC /* MASCompositeConstraint.m in Sources */,
+				7B05A8DE072977F90AA84A0E98E23167 /* MASConstraint.m in Sources */,
+				4CC9B43AD90714A316815FAA71DC89A2 /* MASConstraintMaker.m in Sources */,
+				54BEFE9F75005D327641073B838C6776 /* MASLayoutConstraint.m in Sources */,
+				CECDB459AFB5AD0040AF86378F2DBF97 /* Masonry-dummy.m in Sources */,
+				53305278F1654F968B4E02DF71B098BE /* MASViewAttribute.m in Sources */,
+				E6FB269534400D40C1CE67D18EDD8A9A /* MASViewConstraint.m in Sources */,
+				C9375F078B54A9030D4B9C2E73222A5D /* NSArray+MASAdditions.m in Sources */,
+				C7D83D99D755676EF8A09CC77845BAF4 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				A1336977ADAAD492D6CFD089A8C6E358 /* View+MASAdditions.m in Sources */,
+				567ABE0681AA82748435E32386DE12D7 /* ViewController+MASAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09A97F71852321CDA481C6D343C27790 /* Sources */ = {
+		6A049258AC1592634E033ED4346B8336 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64FF4AE8CFAAFFB8AA900E08958170EA /* NSBundle+YHSearchExtension.m in Sources */,
-				9C7BCC2903CCFAE2C314DDDA8538D6CE /* UIColor+YHSearchExtension.m in Sources */,
-				65C595B941ACA24917130D94143FD50A /* UIView+YHSearchExtension.m in Sources */,
-				B6D0AB04549FFB65C239CC57B816C675 /* YHBaseViewController.m in Sources */,
-				D95681EACB7C0BAADFC3FD149CBD7FAA /* YHSearch-dummy.m in Sources */,
-				B518689EA9C990A92C1D8738D46723D9 /* YHSearchConst.m in Sources */,
-				1E9CB62221D077EC7482DE47CB237034 /* YHSearchHotWordsModel.m in Sources */,
-				2C62546C9D94C363438B38CE0D179864 /* YHSearchNavigationBarView.m in Sources */,
-				025B4B21DC84CEB4C1A338809C36ECB4 /* YHSearchTagConfigure.m in Sources */,
-				469A3CBA1DF8CC4815464A5A87E3C325 /* YHSearchViewController.m in Sources */,
-				BBC140FE259331D700606406 /* YHSearchSuggestionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30194BC63CF945409EFBD2010F1A66DF /* Sources */ = {
+		82697003560C12D7F85A40FD3DB55A26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F79192BDAB026FBE46466E26DF69DEE /* Pods-YHSearch_Tests-dummy.m in Sources */,
+				A1A2CF7BDFFF184E5960E82767DF75F8 /* Pods-YHSearch_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A48201AC594B2E6B09C0EE0396BC1377 /* Sources */ = {
+		B32FA49CDC27B71D05DA707D3E20EB67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */,
-				8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */,
-				E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */,
-				88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */,
-				9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */,
-				11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */,
-				2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */,
-				14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */,
-				A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */,
+				1BBBEBB3D267E146E1BD7A84471ED851 /* NSBundle+YHSearchExtension.m in Sources */,
+				B786047922B35AA1BEBECB3152229C7C /* UIColor+YHSearchExtension.m in Sources */,
+				B69DA2E54220B3CFC1C203E788C797AE /* UIView+YHSearchExtension.m in Sources */,
+				66EBB94406213F8ED6D8A0697BCEB26D /* YHBaseViewController.m in Sources */,
+				204EFE19273EECE7D92FB812F36C6B79 /* YHSearch-dummy.m in Sources */,
+				15C50A8D081A76B6134C9927912C5267 /* YHSearchConst.m in Sources */,
+				2A06DD642C67F7DF1849485DAF544B87 /* YHSearchNavigationBarView.m in Sources */,
+				6D055BE6AC5B925B31EDD5A809826E9A /* YHSearchSuggestionViewController.m in Sources */,
+				7B622507C3005DCB03C2DF5AB0B05D8F /* YHSearchTagConfigure.m in Sources */,
+				B86A71D059A6D74E6E46B628DA6C191C /* YHSearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E462FC17EA438DF72C2351CD6C3A6610 /* Sources */ = {
+		EE210BFC37CDBA0645C09C3819F41723 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D2A63E53C83CFD3C0BFEFA1DB545916 /* Pods-YHSearch_Example-dummy.m in Sources */,
+				7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */,
+				5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */,
+				30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */,
+				C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */,
+				2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */,
+				74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */,
+				B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */,
+				CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */,
+				2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDCC68B04DD5BEF44B48500E52CAF202 /* Sources */ = {
+		FDD148E397FABBF1D41AFB2791C3573C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C40504C4979B5D85F07FDF0848212C5 /* Pods-YHSearch_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6E1B78DE22BE92F190F63AAC95FB2F21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "YHSearch-YHSearch";
-			target = F0A012D0CE763888330AA26AA2F8F9A8 /* YHSearch-YHSearch */;
-			targetProxy = CCD1D307D4B2C881A4ADBB78EEA07A9A /* PBXContainerItemProxy */;
-		};
-		77210C9CD2520B93372A6C5B16326C3D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YHSearch;
-			target = 8BFFF6547B0216DCE09DC633829DB44E /* YHSearch */;
-			targetProxy = A62C29CA0149D3A47C9CCEC0711FB221 /* PBXContainerItemProxy */;
-		};
-		81EAAA57BDAB58ACBE2810CB3F3297E6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-YHSearch_Example";
-			target = A220019C1D765FBEA880A16D61D91A4D /* Pods-YHSearch_Example */;
-			targetProxy = 95C3E8D104E8714640520FA9095C6FA5 /* PBXContainerItemProxy */;
-		};
-		A52054C33BC3633FF5930BA6DCEDF45B /* PBXTargetDependency */ = {
+		57F64FAA3FA837F76AB742D577E457E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FBSnapshotTestCase;
 			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = 1B7366F3BE2A8382B8C8330E83421892 /* PBXContainerItemProxy */;
+			targetProxy = F3B8A7DFED247947419C2A6AF122C12E /* PBXContainerItemProxy */;
 		};
-		A7C63AE912CF9C286E4645C9AFA9794E /* PBXTargetDependency */ = {
+		821D65DFB9FE838D1877FB885056551F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-YHSearch_Example";
+			target = A220019C1D765FBEA880A16D61D91A4D /* Pods-YHSearch_Example */;
+			targetProxy = 6E7E543307114A5476B8D3DB7ECF9D86 /* PBXContainerItemProxy */;
+		};
+		8B1C71D8B0D2E7D1FB364B1EA97F100D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = 445F76E922FF10ABE50C2D8EEB232F26 /* PBXContainerItemProxy */;
+			targetProxy = 65FCBDF10DF1A82A53F54033BFC43191 /* PBXContainerItemProxy */;
 		};
-		D4DF40ACF9FDB32A8233709E2FE904D9 /* PBXTargetDependency */ = {
+		919172A94677FA1BBF8BED64599C86C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "YHSearch-YHSearch";
+			target = F0A012D0CE763888330AA26AA2F8F9A8 /* YHSearch-YHSearch */;
+			targetProxy = D959858DF16F62037DEC073772378A6E /* PBXContainerItemProxy */;
+		};
+		C6BDD312E2D83ADAC758EAF95A897E22 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = C47770A8408148B727BF9D6D6C6033DB /* PBXContainerItemProxy */;
+			targetProxy = 7C2E12CEBCDF1A95FCF780F1D5CED345 /* PBXContainerItemProxy */;
+		};
+		DDB708597A8B975360B0B347EC1F8524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YHSearch;
+			target = 8BFFF6547B0216DCE09DC633829DB44E /* YHSearch */;
+			targetProxy = F2A4E506D59A19367A172E53D9974242 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1FAFCB963EEBD9860260C2C8AB0EB7F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D59B3C0F32A810274992E4FE92202D5 /* Pods-YHSearch_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-YHSearch_Tests/Pods-YHSearch_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YHSearch_Tests/Pods-YHSearch_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		375266B69C0D04F1A255120A6A548A4B /* Release */ = {
+		0B4EC9A2DBE6D3937E4743DC4EAEB100 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5887C4BB0C503304FFB0A96B52E1D5FC /* Pods-YHSearch_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1078,7 +1034,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-YHSearch_Example/Pods-YHSearch_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-YHSearch_Example/Pods-YHSearch_Example.modulemap";
@@ -1096,40 +1052,12 @@
 			};
 			name = Release;
 		};
-		3E39A517897BFCDD1DD7268CB1B69BE9 /* Debug */ = {
+		114DBC5523CEAB8F9884282AE3E8B627 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFE72805626641332E27A0EE2C6EF88B /* FBSnapshotTestCase.debug.xcconfig */;
+			baseConfigurationReference = 3303C97FA0FB0352060CA1F58E778E3D /* YHSearch.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
-				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
-				PRODUCT_NAME = FBSnapshotTestCase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		45BD1DC4ADD03504A5F65C54EC3ED7FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00FFD0E5C1BE2279C48B5B801198861C /* YHSearch.debug.xcconfig */;
-			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1141,7 +1069,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/YHSearch/YHSearch-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/YHSearch/YHSearch-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/YHSearch/YHSearch.modulemap";
 				PRODUCT_MODULE_NAME = YHSearch;
@@ -1156,11 +1084,11 @@
 			};
 			name = Debug;
 		};
-		4F03E4A3EA6B8A85ED2384EB8AF6A83C /* Release */ = {
+		1D30A40E8BEDDA4A0CD0C3E03D28EFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEDB689E79C53F273A2573C066221B95 /* Pods-YHSearch_Tests.release.xcconfig */;
+			baseConfigurationReference = DFE72805626641332E27A0EE2C6EF88B /* FBSnapshotTestCase.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1169,19 +1097,49 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-YHSearch_Tests/Pods-YHSearch_Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YHSearch_Tests/Pods-YHSearch_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1DE12B227985D46524C8BBDDCD2F10BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7731683F4BFFF04ACBB3E9BA86F1B2BA /* FBSnapshotTestCase.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1189,7 +1147,59 @@
 			};
 			name = Release;
 		};
-		6D42DC62C4F2E194221DF89C48496C98 /* Release */ = {
+		658F770575E3FC0086E914315D536BAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC1C31D8CA9ECF7BFB6C518A2BBA130 /* YHSearch.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YHSearch";
+				DEVELOPMENT_TEAM = 74MB64V8BE;
+				IBSC_MODULE = YHSearch;
+				INFOPLIST_FILE = "Target Support Files/YHSearch/ResourceBundle-YHSearch-YHSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = YHSearch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8C323E972FEFC72C7AC6EDF1593C30E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5ADEF2C33BF1C36E1F6020EA61D65B7 /* Masonry.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1239,7 +1249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1250,104 +1260,11 @@
 			};
 			name = Release;
 		};
-		81633B52E58357524BE281009357CB56 /* Debug */ = {
+		96F578914B36DDF036398F6C1F0A1455 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00FFD0E5C1BE2279C48B5B801198861C /* YHSearch.debug.xcconfig */;
+			baseConfigurationReference = 04DBA5D9D467E921B4B19C0DDD06E742 /* Masonry.debug.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YHSearch";
-				IBSC_MODULE = YHSearch;
-				INFOPLIST_FILE = "Target Support Files/YHSearch/ResourceBundle-YHSearch-YHSearch-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = YHSearch;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		97A3627A75E01A1E7E69DD2974D58DD1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22573F36D6540281EBD2050275303943 /* YHSearch.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YHSearch/YHSearch-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YHSearch/YHSearch-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YHSearch/YHSearch.modulemap";
-				PRODUCT_MODULE_NAME = YHSearch;
-				PRODUCT_NAME = YHSearch;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BF531801B332EDF71FA8F4F9667B86BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7731683F4BFFF04ACBB3E9BA86F1B2BA /* FBSnapshotTestCase.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
-				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
-				PRODUCT_NAME = FBSnapshotTestCase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C3138A34E43822A39AB0EFEAC997944F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22573F36D6540281EBD2050275303943 /* YHSearch.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YHSearch";
-				IBSC_MODULE = YHSearch;
-				INFOPLIST_FILE = "Target Support Files/YHSearch/ResourceBundle-YHSearch-YHSearch-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = YHSearch;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		D1069AD30DBCEA2D770B354EA57FC7FE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5ADEF2C33BF1C36E1F6020EA61D65B7 /* Masonry.release.xcconfig */;
-			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1359,7 +1276,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
 				PRODUCT_MODULE_NAME = Masonry;
@@ -1369,13 +1286,46 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */ = {
+		A3F47CECC9AF3FBD3546E2125FE35402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4EF667670B11768F7119A542E52A5FF /* Pods-YHSearch_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YHSearch_Example/Pods-YHSearch_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YHSearch_Example/Pods-YHSearch_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1428,7 +1378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1441,41 +1391,13 @@
 			};
 			name = Debug;
 		};
-		E9B0CF34850B8E75A55EE69CDD77B49C /* Debug */ = {
+		D2674A5491F2659E34438DE71EE989DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04DBA5D9D467E921B4B19C0DDD06E742 /* Masonry.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
-				PRODUCT_MODULE_NAME = Masonry;
-				PRODUCT_NAME = Masonry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F938B1AE9424C7705C7D1AD1D2B664F7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4EF667670B11768F7119A542E52A5FF /* Pods-YHSearch_Example.debug.xcconfig */;
+			baseConfigurationReference = 9D59B3C0F32A810274992E4FE92202D5 /* Pods-YHSearch_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1484,12 +1406,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-YHSearch_Example/Pods-YHSearch_Example-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-YHSearch_Tests/Pods-YHSearch_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YHSearch_Example/Pods-YHSearch_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-YHSearch_Tests/Pods-YHSearch_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1503,68 +1425,156 @@
 			};
 			name = Debug;
 		};
+		E05B2FEC7B10629E4E3B5E6FCDD0BAB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEDB689E79C53F273A2573C066221B95 /* Pods-YHSearch_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YHSearch_Tests/Pods-YHSearch_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YHSearch_Tests/Pods-YHSearch_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E23BC8D8CDB95237CB42AE8B01A0E130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC1C31D8CA9ECF7BFB6C518A2BBA130 /* YHSearch.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YHSearch/YHSearch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YHSearch/YHSearch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YHSearch/YHSearch.modulemap";
+				PRODUCT_MODULE_NAME = YHSearch;
+				PRODUCT_NAME = YHSearch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FE7359C786B7876BE99DAA35D12826E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3303C97FA0FB0352060CA1F58E778E3D /* YHSearch.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YHSearch";
+				DEVELOPMENT_TEAM = 74MB64V8BE;
+				IBSC_MODULE = YHSearch;
+				INFOPLIST_FILE = "Target Support Files/YHSearch/ResourceBundle-YHSearch-YHSearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = YHSearch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		104EC9250BF4EDE104280490293C13C3 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F578914B36DDF036398F6C1F0A1455 /* Debug */,
+				8C323E972FEFC72C7AC6EDF1593C30E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DAA9880679133EC375B7072B9AEABB /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D30A40E8BEDDA4A0CD0C3E03D28EFC6 /* Debug */,
+				1DE12B227985D46524C8BBDDCD2F10BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */,
-				6D42DC62C4F2E194221DF89C48496C98 /* Release */,
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8555806DC60830D3D7EED985C3C1A5EE /* Build configuration list for PBXNativeTarget "Pods-YHSearch_Tests" */ = {
+		6C1477A07D1366404E5BE7AF2A84DF8B /* Build configuration list for PBXNativeTarget "Pods-YHSearch_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FAFCB963EEBD9860260C2C8AB0EB7F9 /* Debug */,
-				4F03E4A3EA6B8A85ED2384EB8AF6A83C /* Release */,
+				A3F47CECC9AF3FBD3546E2125FE35402 /* Debug */,
+				0B4EC9A2DBE6D3937E4743DC4EAEB100 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85ADF3D9813DA2F6437526CE277710F1 /* Build configuration list for PBXNativeTarget "YHSearch-YHSearch" */ = {
+		6F14CF2A6036B3884874B883B2040F7F /* Build configuration list for PBXNativeTarget "YHSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81633B52E58357524BE281009357CB56 /* Debug */,
-				C3138A34E43822A39AB0EFEAC997944F /* Release */,
+				114DBC5523CEAB8F9884282AE3E8B627 /* Debug */,
+				E23BC8D8CDB95237CB42AE8B01A0E130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87FD40BD683E3BD044AA4D1B5CA58652 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+		942AB51CD899A8964DE0191A861417F8 /* Build configuration list for PBXNativeTarget "YHSearch-YHSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9B0CF34850B8E75A55EE69CDD77B49C /* Debug */,
-				D1069AD30DBCEA2D770B354EA57FC7FE /* Release */,
+				FE7359C786B7876BE99DAA35D12826E2 /* Debug */,
+				658F770575E3FC0086E914315D536BAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A38070E189561F257BBD5A0A55CACCCF /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
+		C56AE94FBA5A01E1C5FD13157CD117AC /* Build configuration list for PBXNativeTarget "Pods-YHSearch_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3E39A517897BFCDD1DD7268CB1B69BE9 /* Debug */,
-				BF531801B332EDF71FA8F4F9667B86BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CFF77EFA9BB44488D4D5E8230B9B71AF /* Build configuration list for PBXNativeTarget "YHSearch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				45BD1DC4ADD03504A5F65C54EC3ED7FF /* Debug */,
-				97A3627A75E01A1E7E69DD2974D58DD1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FEB09877855129D8482462BEAB4E0732 /* Build configuration list for PBXNativeTarget "Pods-YHSearch_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F938B1AE9424C7705C7D1AD1D2B664F7 /* Debug */,
-				375266B69C0D04F1A255120A6A548A4B /* Release */,
+				D2674A5491F2659E34438DE71EE989DD /* Debug */,
+				E05B2FEC7B10629E4E3B5E6FCDD0BAB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

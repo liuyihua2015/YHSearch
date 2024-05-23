@@ -12,7 +12,6 @@
 
 #import "YHSearchViewController.h"
 #import "YHSearchTagConfigure.h"
-#import "YHSearchHotWordsModel.h"
 
 #define YHSearch_h
 
