@@ -124,18 +124,21 @@
     
     self.navigationController.navigationBarHidden = YES;
     
-    if (YES == self.showKeyboardWhenReturnSearchResult) {
-        [self.searchNavigaitonBarView searchBecomeFirstResponder];
-        if(_delegate && [_delegate respondsToSelector:@selector(customNavBarBecomeFirstResponder)]) {
-            [_delegate customNavBarBecomeFirstResponder];
-        }
-    }
+
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     [self setupHistorySearchNormalTags];
+    
+    if (YES == self.showKeyboardWhenReturnSearchResult) {
+        [self.searchNavigaitonBarView searchBecomeFirstResponder];
+    }
+    
+    if(_delegate && [_delegate respondsToSelector:@selector(customNavBarBecomeFirstResponder)]) {
+        [_delegate customNavBarBecomeFirstResponder];
+    }
     
 }
 
@@ -392,14 +395,14 @@
 
 
 
-- (NSMutableArray *)searchHistories
-{
-    if (!_searchHistories) {
-
-         _searchHistories = [NSMutableArray arrayWithArray:[NSKeyedUnarchiver unarchiveObjectWithFile:self.searchHistoriesCachePath]];
-    }
-    return _searchHistories;
-}
+//- (NSMutableArray *)searchHistories
+//{
+//    if (!_searchHistories) {
+//
+//         _searchHistories = [NSMutableArray arrayWithArray:[self unarchiveObjectWithFile]];
+//    }
+//    return _searchHistories;
+//}
 
 - (UILabel *)setupTitleLabel:(NSString *)title
 {
@@ -633,7 +636,7 @@
 {
     _searchHistoriesCachePath = [searchHistoriesCachePath copy];
     
-    self.searchHistories = nil;
+    self.searchHistories = [NSMutableArray arrayWithArray:[self unarchiveObjectWithFile]];
     
     [self setupHistorySearchNormalTags];
     
@@ -794,7 +797,7 @@
 - (void)emptySearchHistoryDidClick
 {
     [self.searchHistories removeAllObjects];
-    [NSKeyedArchiver archiveRootObject:self.searchHistories toFile:self.searchHistoriesCachePath];
+    [self archiveRootObject:self.searchHistories];
     [self setupHistorySearchNormalTags];
     [self setupHotSearchNormalTags];
 }
@@ -941,7 +944,7 @@
     if (self.searchHistories.count > sender.tag) {
         [self.searchHistories removeObjectAtIndex:sender.tag];
     }
-    [NSKeyedArchiver archiveRootObject:self.searchHistories toFile:self.searchHistoriesCachePath];
+    [self archiveRootObject:self.searchHistories];
     [self setupHistorySearchNormalTags];
     
     if(self.searchHistories.count == 0) {
@@ -967,7 +970,7 @@
             [self.searchHistories removeObject:searchText];
             [self.searchHistories insertObject:searchText atIndex:0];
         }
-        [NSKeyedArchiver archiveRootObject:self.searchHistories toFile:self.searchHistoriesCachePath];
+        [self archiveRootObject:self.searchHistories];
     }
 }
 
@@ -976,8 +979,48 @@
 {
     UITableViewCell *cell = (UITableViewCell *)sender.superview;
     [self.searchHistories removeObject:cell.textLabel.text];
-    [NSKeyedArchiver archiveRootObject:self.searchHistories toFile:self.searchHistoriesCachePath];
+    [self archiveRootObject:self.searchHistories];
     [self.tableView reloadData];
+}
+
+//MARK: 保存历史数据
+-(void)archiveRootObject:(NSMutableArray *)rootObject {
+    
+    NSError *archiveError = nil;
+    NSData *archiveData = [NSKeyedArchiver archivedDataWithRootObject:rootObject requiringSecureCoding:YES error:&archiveError];
+    if (archiveData) {
+        [archiveData writeToFile:self.searchHistoriesCachePath options:NSDataWritingAtomic error:&archiveError];
+    } else {
+        NSLog(@"Archive Error: %@", archiveError);
+    }
+}
+
+//MARK: 获取历史数据
+-(NSArray *)unarchiveObjectWithFile {
+    
+    NSString *filePath = self.searchHistoriesCachePath;
+    if (filePath && [[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+        NSError *unarchiveError = nil;
+        NSData *archiveData = [NSData dataWithContentsOfFile:filePath options:NSDataReadingMappedIfSafe error:&unarchiveError];
+        if (archiveData) {
+            // 允许类集合
+            NSSet *allowedClasses = [NSSet setWithObjects:[NSMutableArray class], [NSString class], nil];
+            // 解档对象
+            id unarchivedObject = [NSKeyedUnarchiver unarchivedObjectOfClasses:allowedClasses fromData:archiveData error:&unarchiveError];
+        
+            if (unarchivedObject) {
+                return unarchivedObject;
+            } else {
+                NSLog(@"Unarchive Error: %@", unarchiveError);
+                return @[];
+            }
+        } else {
+            NSLog(@"Read Archive Error: %@", unarchiveError);
+            return @[];
+        }
+    }else{
+        return @[];
+    }
 }
 
 #pragma mark - Table view data source
@@ -1083,7 +1126,7 @@
 
 -(void)onClickCancelButtonForSearchNavigaitonBarView:(YHSearchNavigationBarView *)searchNavigaitonBarView{
     
-    [self.navigationController popViewControllerAnimated:NO];
+    [self.navigationController popViewControllerAnimated:self.cancelClickAnimated];
     
 }
 

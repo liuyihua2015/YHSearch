@@ -149,14 +149,14 @@ didSearchWithSearchTextField:(UITextField *)searchTextField
 @property (nonatomic, assign) YHSearchHistoryStyle searchHistoryStyle;
 
 /**
- The element of search suggestions
+ 搜索建议元素
  
- Note: it is't effective when `searchSuggestionHidden` is NO or cell of suggestion view is custom.
+ Note: 当“searchSuggestionHidden是NO或建议视图的单元格是自定义时，它是无效的。
  */
 @property (nonatomic, copy) NSArray<NSString *> *searchSuggestions;
 
 /**
- Whether hidden search suggstion view, default is NO.
+ 是否隐藏搜索建议视图，默认为NO。
  */
 @property (nonatomic, assign) BOOL searchSuggestionHidden;
 
@@ -281,6 +281,11 @@ didSearchWithSearchTextField:(UITextField *)searchTextField
  搜索标签配置属性
  */
 @property (nonatomic, strong) YHSearchTagConfigure * searchTagConfigure;
+
+/**
+ 取消按钮点击是否动画,默认NO
+ */
+@property (nonatomic, assign) BOOL cancelClickAnimated;
 
 /**
  用热门搜索和搜索栏的占位符创建searchViewContoller实例。

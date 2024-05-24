@@ -38,8 +38,6 @@
     
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    } else {
-        self.automaticallyAdjustsScrollViewInsets = NO;
     }
     self.tableView.delegate = self;
     self.tableView.dataSource = self;

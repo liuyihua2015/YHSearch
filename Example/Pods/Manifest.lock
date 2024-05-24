@@ -1,20 +1,13 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - Masonry (1.1.0)
-  - YHSearch (0.1.1):
-    - Masonry (~> 1.1.0)
+  - YHSearch (0.1.1)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
+  - Masonry
   - YHSearch (from `../`)
 
 SPEC REPOS:
   trunk:
-    - FBSnapshotTestCase
     - Masonry
 
 EXTERNAL SOURCES:
@@ -22,10 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  YHSearch: 51c13ea8da33922bc5b2c81d83bcaabe0c5b2767
+  YHSearch: 567925223a7b98d9e9eb736aaa4f541c6e2855b7
 
-PODFILE CHECKSUM: bb363ef5696f3d43d75f40fcbba6397a7b78baf1
+PODFILE CHECKSUM: e42794e88e6f96b65ee6cc7149f49ddfea732749
 
 COCOAPODS: 1.15.2

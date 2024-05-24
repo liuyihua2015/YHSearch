@@ -7,7 +7,6 @@
 //
 
 #import "YHSearchNavigationBarView.h"
-#import "Masonry.h"
 #import "YHSearchConst.h"
 
 @interface YHSearchNavigationBarView ()<UITextFieldDelegate>
@@ -30,41 +29,20 @@
 }
 
 - (void)p_layoutSubviews{
-    [self.searchView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(-5);
-        make.left.mas_equalTo(10);
-        make.right.mas_equalTo(self.cancelButton.mas_left);
-        make.height.mas_equalTo(36);
-    }];
-   
-    [self.searchIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(11);
-        make.centerY.mas_equalTo(self.searchView);
-    }];
-
     
-    [self.searchTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.searchIconImageView.mas_right).mas_offset(10);
-        make.right.mas_equalTo(-7);
-        make.centerY.mas_equalTo(self.searchView);
-        make.top.mas_equalTo(self.searchView);
-    }];
+    CGFloat cancelWidth = 50;
     
-    [self.cancelButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.mas_equalTo(self.searchView);
-        make.left.mas_equalTo(self.searchView.mas_right);
-        make.right.mas_equalTo(self);
-        make.width.mas_equalTo(60);
-    }];
+    self.searchView.frame = CGRectMake(10, YH_StatusBarHeight + 4, YHScreenW - 20 - cancelWidth, 36);
     
-    [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.bottom.mas_equalTo(self);
-        make.height.mas_equalTo(0.5);
-    }];
+    self.searchIconImageView.frame = CGRectMake(10, 0, 16, 36);
     
-    [self.searchIconImageView setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
-    [self.cancelButton setContentHuggingPriority:UILayoutPriorityRequired
-                                         forAxis:UILayoutConstraintAxisHorizontal];
+    self.searchTextField.frame = CGRectMake(CGRectGetMaxX(self.searchIconImageView.frame) + 10, 0, self.searchView.yh_width - self.searchIconImageView.yh_height - 10, 36);
+    
+    self.cancelButton.frame = CGRectMake(YHScreenW - 10 - cancelWidth, 0, cancelWidth, 36);
+    self.cancelButton.yh_centerY = self.searchView.yh_centerY;
+    
+    self.line.frame = CGRectMake(0, YH_NavgationFullHeight - 1, self.yh_width, 0.5);
+    
 }
 
 #pragma mark -- initSubviews
@@ -82,6 +60,7 @@
 - (UIImageView *)searchIconImageView{
     if (!_searchIconImageView) {
         _searchIconImageView = [[UIImageView alloc]init];
+        _searchIconImageView.contentMode = UIViewContentModeScaleAspectFit;
         _searchIconImageView.image = [NSBundle yh_imageNamed:@"search"];
         [self.searchView addSubview:_searchIconImageView];
     }

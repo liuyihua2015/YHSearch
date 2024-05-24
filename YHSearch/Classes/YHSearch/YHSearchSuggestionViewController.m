@@ -23,7 +23,6 @@
 {
     YHSearchSuggestionViewController *searchSuggestionVC = [[self alloc] init];
     searchSuggestionVC.didSelectCellBlock = didSelectCellBlock;
-    searchSuggestionVC.automaticallyAdjustsScrollViewInsets = NO;
     return searchSuggestionVC;
 }
 

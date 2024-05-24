@@ -56,18 +56,18 @@
 -(void)searchClick{
     
     NSLog(@"搜索按钮点击");
-
+    
     NSMutableArray * arrM = [NSMutableArray array];
-//
-//    for (int i = 0; i<10; i++) {
-//
-//        YHSearchHotWordsModel * model = [[YHSearchHotWordsModel alloc]init];
-//        model.title = [NSString stringWithFormat:@"热么词%d",i];
-//        if (i < 5) {
-//            model.isShowHot = YES;
-//        }
-//        [arrM addObject:model];
-//    }
+    //
+    //    for (int i = 0; i<10; i++) {
+    //
+    //        YHSearchHotWordsModel * model = [[YHSearchHotWordsModel alloc]init];
+    //        model.title = [NSString stringWithFormat:@"热么词%d",i];
+    //        if (i < 5) {
+    //            model.isShowHot = YES;
+    //        }
+    //        [arrM addObject:model];
+    //    }
     
     
     //创建子控制器
@@ -84,21 +84,21 @@
         [self.navigationController pushViewController:vc animated:NO];
         
     }];
-
+    
     searchViewController.delegate = self;
     
     //位置设置
     searchViewController.hotSearchPositionIsUp = NO;
     //样式设置
     searchViewController.hotSearchStyle = YHHotSearchStyleCell;
-//    searchViewController.searchHistoryStyle = YHSearchHistoryStyleCell;
+    //    searchViewController.searchHistoryStyle = YHSearchHistoryStyleCell;
     
     //headerView 高度配置
-//    searchViewController.hotSearchHeaderLabelLeft = 8;
-//    searchViewController.historySearchHeaderLabelLeft = 8;
-//    searchViewController.hotSearchHeaderViewHeight = 100;
-//    searchViewController.historySearchHeaderViewHeight = 100;
-   
+    //    searchViewController.hotSearchHeaderLabelLeft = 8;
+    //    searchViewController.historySearchHeaderLabelLeft = 8;
+    //    searchViewController.hotSearchHeaderViewHeight = 100;
+    //    searchViewController.historySearchHeaderViewHeight = 100;
+    
     
     //热门搜索外边框设置
     searchViewController.hotSearchView.layer.borderColor = [UIColor colorWithRed:255/255.0 green:224/255.0 blue:228/255.0 alpha:1.0].CGColor;
@@ -110,39 +110,38 @@
     YHSearchTagConfigure * configure = searchViewController.searchTagConfigure;
     configure.historytTagTextDisplayLength = 10;
     
-//    configure.emptyBtnStyle = EmptyBtnStyleTitle;
-//    configure.searchHistoryDeleteTitle = @"删除";
+    //    configure.emptyBtnStyle = EmptyBtnStyleTitle;
+    //    configure.searchHistoryDeleteTitle = @"删除";
     
-//    configure.tagHeight = 44;
-//    configure.tagLeftMargin = 8;
-//    configure.tagLeftPanding = 0;
+    //    configure.tagHeight = 44;
+    //    configure.tagLeftMargin = 8;
+    //    configure.tagLeftPanding = 0;
     
-//    configure.tagBorderColor = [UIColor redColor];
-//    configure.tagBorderWidth = 1;
-//    configure.tagCornerRadius = 10;
-//    configure.tagFont = [UIFont systemFontOfSize:12];
-//    configure.tagTitleColor = [UIColor blackColor];
-//    configure.tagBackgroundColor = [UIColor whiteColor];
-//
+    //    configure.tagBorderColor = [UIColor redColor];
+    //    configure.tagBorderWidth = 1;
+    //    configure.tagCornerRadius = 10;
+    //    configure.tagFont = [UIFont systemFontOfSize:12];
+    //    configure.tagTitleColor = [UIColor blackColor];
+    //    configure.tagBackgroundColor = [UIColor whiteColor];
+    //
     searchViewController.searchTagConfigure = configure;
     
-
-
+    
     //个数不做控制
     searchViewController.searchHistoriesShowCount = 10;
-
+    
     //标题和按钮设置
-//    searchViewController.searchHistoryHeader.yh_width = 200;
-//    searchViewController.searchHistoryHeader.font = [UIFont systemFontOfSize:15];
-//    searchViewController.searchHistoryHeader.textColor = [UIColor blackColor];
+    //    searchViewController.searchHistoryHeader.yh_width = 200;
+    //    searchViewController.searchHistoryHeader.font = [UIFont systemFontOfSize:15];
+    //    searchViewController.searchHistoryHeader.textColor = [UIColor blackColor];
     
-//    searchViewController.hotSearchHeader.yh_width = 200;
-//    searchViewController.hotSearchHeader.font = [UIFont systemFontOfSize:15];
-//    searchViewController.hotSearchHeader.textColor = [UIColor blackColor];
+    //    searchViewController.hotSearchHeader.yh_width = 200;
+    //    searchViewController.hotSearchHeader.font = [UIFont systemFontOfSize:15];
+    //    searchViewController.hotSearchHeader.textColor = [UIColor blackColor];
     
     
-    
-   [self.navigationController pushViewController:searchViewController animated:YES];
+    searchViewController.cancelClickAnimated = YES;
+    [self.navigationController pushViewController:searchViewController animated:YES];
     
     self.searchVC = searchViewController;
     
@@ -192,10 +191,10 @@
     [self.searchNavView searchBecomeFirstResponder];
 }
 
-/// 自定义导航栏
-- (UIView *)customSearchNavigationBar {
-    return self.searchNavView;
-}
+///// 自定义导航栏
+//- (UIView *)customSearchNavigationBar {
+//    return self.searchNavView;
+//}
 
 - (UIView *)customHotHeaderView {
     UIView * haederView = [[UIView alloc]init];
