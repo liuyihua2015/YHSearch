@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YHSearch'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = '简单的历史和热门搜索框'
   s.description      = <<-DESC
         一个简单的历史搜索和热门搜索控制器

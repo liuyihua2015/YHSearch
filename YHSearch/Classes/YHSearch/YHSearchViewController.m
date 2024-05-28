@@ -108,15 +108,6 @@
 }
 
 
-- (BOOL)prefersStatusBarHidden {
-    return NO;
-}
-
-- (BOOL)fd_interactivePopDisabled {
-    
-    return YES;
-    
-}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -806,11 +797,6 @@
 {
     UIView *tagView = (UIButton *)tag.view;
     
-    if (tagView.tag == 0) {
-        [self searchNavigaitonBarViewByTextFieldShouldReturn:self.searchNavigaitonBarView.searchTextField];
-        return;
-    }
-    
     if (tagView.tag >= 1000) {//热门搜索
         
         NSInteger tag = tagView.tag - 1000;
@@ -1061,18 +1047,19 @@
 }
 /// 清空文本功能
 -(void)searchNavigationBarClearText {
+    self.searchNavigaitonBarView.searchTextField.text = @"";
     [self searchNavigaitonBarViewByTextFieldShouldClear:self.searchNavigaitonBarView.searchTextField];
 }
 /// 搜索功能
 -(void)searchNavigationBarStartSearch:(NSString *)searchText {
-    [self searchNavigaitonBarViewByTextFieldShouldReturn:self.searchNavigaitonBarView.searchTextField];
+    self.searchNavigaitonBarView.searchTextField.text = searchText;
+    [self saveSearchCacheAndRefreshView:searchText];
 }
 
 //MARK: - PPSearchNavigaitonBarViewDelegate
 
 -(void)searchNavigaitonBarViewByTextFieldDidChange:(UITextField *)textField {
-    
-    NSLog(@"%@",textField.text);
+
     
     if (textField.text.length == 0) {
         self.searchNavigaitonBarView.searchTextField.placeholder = self.kSearchTextFieldPlaceholder;
