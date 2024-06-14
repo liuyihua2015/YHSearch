@@ -657,11 +657,13 @@
     
     _hotSearches = hotSearches;
     if (0 == hotSearches.count || !self.showHotSearch) {
+        self.hotSearchView.hidden = YES;
         self.hotSearchTagsContentView.hidden = YES;
         return;
     };
     
     self.tableView.tableHeaderView.hidden = NO;
+    self.hotSearchView.hidden = NO;
     self.hotSearchTagsContentView.hidden = NO;
     [self setupHotSearchNormalTags];
 }
